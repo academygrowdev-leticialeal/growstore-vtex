@@ -6,17 +6,14 @@
     "@types/co-body": "^0.0.3",
     "@types/node": "12.x",
     "@vtex/api": "6.50.1",
-    "eslint": "^6.3.0",
-    "eslint-config-vtex": "^11.0.0",
-    "prettier": "^1.18.2",
+    "@vtex/tsconfig": "^0.5.6",
     "typescript": "3.9.7"
-  },
-  "resolutions": {
-    "**/**/lodash": "^4.17.19",
-    "@opentelemetry/api": "1.0.4"
   },
   "scripts": {
     "lint": "tsc --noEmit --pretty && eslint -c .eslintrc.json --fix './**/*.ts'"
   },
-  "version": "0.7.2"
+  "version": "0.7.2",
+  "resolutions": {
+    "@opentelemetry/api": "1.0.4"
+  }
 }
