@@ -1,9 +1,9 @@
 {
-  "name": "backend-course",
-  "vendor": "vtex",
+  "name": "search-cep-app",
+  "vendor": "partnersigrowdev",
   "version": "0.0.2",
-  "title": "Backend Course",
-  "description": "Reference app for the Backend Course",
+  "title": "Search Cep App",
+  "description": "Reference app for the Backend",
   "builders": {
     "node": "6.x"
   },
@@ -13,7 +13,7 @@
   "credentialType": "absolute",
   "policies": [],
   "dependencies": {
-    "vtex.events-example": "0.x"
+    "partnersigrowdev.events-example": "0.x"
   },
   "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"
 }

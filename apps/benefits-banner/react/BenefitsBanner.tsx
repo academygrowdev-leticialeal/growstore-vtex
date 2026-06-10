@@ -4,8 +4,9 @@ type Props = {
   name: string
 }
 
-function Greeting({ name }: Props) {
+function BenefitsBanner({ name }: Props) {
+
   return <div>Hey, {name}</div>
 }
 
-export default Greeting
+export default BenefitsBanner
