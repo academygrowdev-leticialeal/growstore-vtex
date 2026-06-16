@@ -1,6 +1,7 @@
 {
   "store.home": {
     "blocks": [
+      "topbar-growstore",
       "list-context.image-list#demo",
       /* You can make references to blocks defined in other files.
        * For example, `flex-layout.row#deals` is defined in the `deals.json` file. */
@@ -18,6 +19,11 @@
   "benefits-banner-growstore": {
     "props": {
       "name": "John"
+    }
+  },
+  "topbar-growstore": {
+    "props": {
+      "name": "Mariah"
     }
   },
   "list-context.image-list#demo": {
