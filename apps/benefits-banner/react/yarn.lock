@@ -4303,9 +4303,9 @@ parse5@5.1.0:
   resolved "https://registry.yarnpkg.com/parse5/-/parse5-5.1.0.tgz#c59341c9723f414c452975564c7c00a68d58acd2"
   integrity sha512-fxNG2sQjHvlVAYmzBZS9YlDp6PTSSDwa98vkD4QgVDDCAo84z5X1t5XyJQ62ImdLXx5NdIIfihey6xpum9/gRQ==
 
-"partnersigrowdev.benefits-banner@https://leticiadev--partnersigrowdev.myvtex.com/_v/private/typings/linked/v1/partnersigrowdev.benefits-banner@0.0.1+build1781120341/public/@types/partnersigrowdev.benefits-banner":
+"partnersigrowdev.benefits-banner@https://pedrolandindev--partnersigrowdev.myvtex.com/_v/private/typings/linked/v1/partnersigrowdev.benefits-banner@0.0.1+build1780005150/public/@types/partnersigrowdev.benefits-banner":
   version "0.0.1"
-  resolved "https://leticiadev--partnersigrowdev.myvtex.com/_v/private/typings/linked/v1/partnersigrowdev.benefits-banner@0.0.1+build1781120341/public/@types/partnersigrowdev.benefits-banner#a473accdf44fb44f58e98d4046c84fb1960ab4a7"
+  resolved "https://pedrolandindev--partnersigrowdev.myvtex.com/_v/private/typings/linked/v1/partnersigrowdev.benefits-banner@0.0.1+build1780005150/public/@types/partnersigrowdev.benefits-banner#00df0946207110ec74e541fe9308ffb253ef9b25"
 
 pascalcase@^0.1.1:
   version "0.1.1"

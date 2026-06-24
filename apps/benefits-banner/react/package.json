@@ -19,7 +19,7 @@
     "@vtex/tsconfig": "^0.4.4",
     "apollo-cache-inmemory": "^1.6.5",
     "graphql": "^14.6.0",
-    "partnersigrowdev.benefits-banner": "https://leticiadev--partnersigrowdev.myvtex.com/_v/private/typings/linked/v1/partnersigrowdev.benefits-banner@0.0.1+build1781120341/public/@types/partnersigrowdev.benefits-banner",
+    "partnersigrowdev.benefits-banner": "https://pedrolandindev--partnersigrowdev.myvtex.com/_v/private/typings/linked/v1/partnersigrowdev.benefits-banner@0.0.1+build1780005150/public/@types/partnersigrowdev.benefits-banner",
     "typescript": "3.9.7",
     "vtex.product-context": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.product-context@0.10.1/public/@types/vtex.product-context",
     "vtex.render-runtime": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.render-runtime@8.136.2/public/@types/vtex.render-runtime"
