@@ -1,0 +1,53 @@
+{
+  "flex-layout.row#container_selling-price-pdp": {
+    "props": {
+      "preserveLayoutOnMobile": true,
+      "preventHorizontalStretch": true,
+      "blockClass": "container_selling-price_pdp"
+    },
+    "children": [
+      "flex-layout.row#selling-price_pdp",
+      "flex-layout.row#list-price-savings_pdp"
+    ]
+  },
+  "flex-layout.row#selling-price_pdp": {
+    "props": {
+      "preserveLayoutOnMobile": true,
+      "preventHorizontalStretch": true,
+      "blockClass": "selling-price_pdp"
+    },
+    "children": [
+      "product-selling-price#pdp",
+      "product-installments"
+    ]
+  },
+  "flex-layout.row#list-price-savings_pdp": {
+    "props": {
+      "preserveLayoutOnMobile": true,
+      "preventHorizontalStretch": true,
+      "blockClass": "list-price_pdp"
+    },
+    "children": [
+      "product-list-price#pdp",
+      "product-price-savings#pdp"
+    ]
+  },
+  "product-selling-price#pdp": {
+    "props": {
+      "blockClass": "selling-price_pdp",
+      "message": "{sellingPriceValue}"
+    }
+  },
+  "product-price-savings#pdp": {
+    "props": {
+      "blockClass": "saving-price_pdp",
+      "message": "-{savingsPercentage}"
+    }
+  },
+  "product-list-price#pdp": {
+    "props": {
+      "blockClass": "list-price_pdp",
+      "message": "{listPriceValue}"
+    }
+  }
+}

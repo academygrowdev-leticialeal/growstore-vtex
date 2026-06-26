@@ -12,12 +12,7 @@
   },
   "flex-layout.row#product-main": {
     "props": {
-      "colGap": 7,
-      "rowGap": 7,
-      "marginTop": 4,
-      "marginBottom": 7,
-      "paddingTop": 7,
-      "paddingBottom": 7
+      "blockClass": "product-main"
     },
     "children": [
       "flex-layout.col#stack",
@@ -29,7 +24,8 @@
       "stack-layout"
     ],
     "props": {
-      "width": "60%",
+      "blockClass": "product-stack",
+      "width": "50%",
       "rowGap": 0
     }
   },

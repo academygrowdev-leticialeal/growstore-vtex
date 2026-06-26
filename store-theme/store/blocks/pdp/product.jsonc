@@ -7,23 +7,27 @@
       "flex-layout.row#specifications-title",
       "product-specification-group#table",
       "shelf.relatedProducts",
-      "product-reviews",
+      /* "product-reviews", */
       "product-questions-and-answers"
     ]
   },
   "flex-layout.row#specifications-title": {
+    "props": {
+      "blockClass": "specifications-title_pdp"
+    },
     "children": [
       "rich-text#specifications"
     ]
   },
   "rich-text#specifications": {
     "props": {
-      "text": "##### Product Specifications"
+      "text": "##### Product Specifications",
+      "blockClass": "specifications-title_pdp"
     }
   },
   "flex-layout.row#description": {
     "props": {
-      "marginBottom": 7
+      "blockClass": "product-description_pdp"
     },
     "children": [
       "product-description"
