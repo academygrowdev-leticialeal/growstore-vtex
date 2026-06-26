@@ -1,3 +1,4 @@
+.flexRow--shelf_pdp,
 .flexRow--product-main,
 .flexRow--product-description_pdp,
 .flexRow--specifications-title_pdp,
@@ -56,6 +57,12 @@
 
 .flexRow--productSpecificationGroup {
   padding-bottom: 32px;
+}
+
+
+.flexRow--shelf_pdp {
+  padding-bottom: 25px;
+  padding-top: 25px;
 }
 
 @media (max-width: 800px) {

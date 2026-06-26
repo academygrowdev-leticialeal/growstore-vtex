@@ -6,6 +6,7 @@
       "flex-layout.row#description",
       "flex-layout.row#specifications-title",
       "product-specification-group#table",
+      "flex-layout.row#shelf-01_pdp",
       "shelf.relatedProducts",
       /* "product-reviews", */
       "product-questions-and-answers"
@@ -39,16 +40,6 @@
       "specificationName": "On Sale",
       "visibleWhen": "True",
       "displayValue": "SPECIFICATION_NAME"
-    }
-  },
-  "share#default": {
-    "props": {
-      "social": {
-        "Facebook": true,
-        "WhatsApp": true,
-        "Twitter": false,
-        "Pinterest": true
-      }
     }
   }
 }

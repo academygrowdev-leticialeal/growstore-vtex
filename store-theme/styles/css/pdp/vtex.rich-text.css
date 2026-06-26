@@ -4,3 +4,12 @@
   line-height: 20px;
   font-weight: 500;
 }
+
+.container--shelfTitle_pdp {
+  display: flex;
+  justify-content: center;
+}
+
+.headingLevel2--shelfTitle_pdp {
+  color: #fff;
+}
