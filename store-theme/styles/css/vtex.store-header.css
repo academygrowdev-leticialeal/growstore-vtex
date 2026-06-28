@@ -36,7 +36,9 @@
  */
 :global(.vtex-sticky-layout-0-x-wrapper--stuck)
   :global(.vtex-flex-layout-0-x-flexRowContent--main-header) {
-  transition: padding 0.3s ease, background 0.3s ease;
+  transition:
+    padding 0.3s ease,
+    background 0.3s ease;
   padding-top: 0;
   padding-bottom: 0;
 }

@@ -1,17 +1,18 @@
 {
   "vendor": "partnersigrowdev",
-  "name": "topbar",
+  "name": "shelf-item",
   "version": "0.0.1",
-  "title": "Topbar",
-  "description": "Topbar of GrowStore",
+  "title": "Shelf Item",
+  "description": "Shelf Item of GrowStore",
   "builders": {
     "react": "3.x",
-    "messages": "1.x",
     "docs": "0.x",
     "store": "0.x"
   },
   "dependencies": {
-    "vtex.product-context": "0.x"
+    "vtex.search-graphql": "0.x",
+    "vtex.store-graphql": "2.x",
+    "vtex.css-handles": "1.x"
   },
   "registries": [
     "smartcheckout"

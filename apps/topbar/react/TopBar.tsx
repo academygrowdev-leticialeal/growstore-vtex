@@ -1,12 +1,11 @@
-import React from 'react'
+import React from "react";
 
 type Props = {
-  name: string
-}
+  name: string;
+};
 
 function TopBar({ name }: Props) {
-
-  return <div>Hey, {name}</div>
+  return <div>Hey, {name}</div>;
 }
 
-export default TopBar
+export default TopBar;
