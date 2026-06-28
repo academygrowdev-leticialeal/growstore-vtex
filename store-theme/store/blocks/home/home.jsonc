@@ -5,9 +5,8 @@
       "list-context.image-list#demo",
       /* You can make references to blocks defined in other files.
        * For example, `flex-layout.row#deals` is defined in the `deals.json` file. */
-      "flex-layout.row#deals",
       "__fold__",
-      "rich-text#shelf-title",
+      "flex-layout.row#growstore-categories",
       "flex-layout.row#shelf",
       "info-card#home",
       "rich-text#question",
@@ -26,10 +25,95 @@
       "name": "Mariah"
     }
   },
-  "list-context.image-list#demo": {
+  /* Início - Shelf Item */
+  "flex-layout.row#growstore-categories": {
+    "children": ["flex-layout.col#home-categories"]
+  },
+  "flex-layout.col#home-categories": {
     "children": [
-      "slider-layout#demo-images"
+      "rich-text#home-categories-text",
+      "rich-text#home-categories-title",
+      "shelf-item-growstore"
     ],
+    "props": {
+      "blockClass": "homeCategories"
+    }
+  },
+  "rich-text#home-categories-text": {
+    "props": {
+      "text": "Explore",
+      "blockClass": "homeCategoriesText"
+    }
+  },
+  "rich-text#home-categories-title": {
+    "props": {
+      "text": "## Categorias",
+      "blockClass": "homeCategoriesTitle"
+    }
+  },
+  "shelf-item-growstore": {
+    "props": {
+      "categories": [
+        {
+          "icon": "👕",
+          "text": "Camisetas",
+          "link": "/camisetas",
+          "qtde": ""
+        },
+        {
+          "icon": "☕",
+          "text": "Canecas",
+          "link": "/canecas",
+          "qtde": ""
+        },
+        {
+          "icon": "🎒",
+          "text": "Mochilas",
+          "link": "/mochilas",
+          "qtde": ""
+        },
+        {
+          "icon": "🧴",
+          "text": "Garrafas",
+          "link": "/garrafas-termicas",
+          "qtde": ""
+        },
+        {
+          "icon": "🥤",
+          "text": "Copos",
+          "link": "/copos-termicos",
+          "qtde": ""
+        },
+        {
+          "text": "Blocos de Nota",
+          "icon": "📓",
+          "link": "/blocos-de-nota",
+          "qtde": ""
+        },
+        {
+          "icon": "🖊️",
+          "text": "Canetas",
+          "link": "/canetas",
+          "qtde": ""
+        },
+        {
+          "icon": "🏷️",
+          "text": "Adesivos",
+          "link": "/adesivos",
+          "qtde": ""
+        },
+        {
+          "icon": "🖱️",
+          "text": "Mousepads",
+          "link": "/mousepads",
+          "qtde": ""
+        }
+      ]
+    }
+  },
+  /*Fim - Shelf Item */
+  "list-context.image-list#demo": {
+    "children": ["slider-layout#demo-images"],
     "props": {
       "height": 570,
       "preload": true,
@@ -57,24 +141,12 @@
       "blockClass": "carousel"
     }
   },
-  "rich-text#shelf-title": {
-    "props": {
-      "text": "## Summer",
-      "blockClass": "shelfTitle"
-    }
-  },
   "flex-layout.row#shelf": {
-    "children": [
-      "list-context.product-list#demo1"
-    ]
+    "children": ["list-context.product-list#demo1"]
   },
   "list-context.product-list#demo1": {
-    "blocks": [
-      "product-summary.shelf"
-    ],
-    "children": [
-      "slider-layout#demo-products"
-    ],
+    "blocks": ["product-summary.shelf"],
+    "children": ["slider-layout#demo-products"],
     "props": {
       "orderBy": "OrderByTopSaleDESC"
     }

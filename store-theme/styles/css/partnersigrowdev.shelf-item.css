@@ -1,0 +1,96 @@
+/* Desktop — grid normal */
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 16px;
+  width: 100%;
+  margin-top: 32px;
+  padding-block: 8px;
+}
+
+.card {
+  background: #13203b;
+  border-radius: 16px;
+  min-height: 120px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  cursor: pointer;
+  border: 1px solid #13203b;
+  flex-shrink: 0;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  background: #1a2c52;
+  border: 1px solid #39b54a;
+}
+
+.icon {
+  font-size: 28px;
+  margin-bottom: 12px;
+  line-height: 1;
+}
+
+.title {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 4px;
+}
+
+.count {
+  color: #9db0d3;
+  font-size: 12px;
+}
+
+@media (max-width: 1024px) {
+  .container {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+  }
+}
+
+/* Mobile — vira slider horizontal */
+@media (max-width: 480px) {
+  .container {
+    display: flex;
+    flex-direction: row;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    gap: 12px;
+
+    /* Esconde a scrollbar mas mantém o scroll */
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    position: relative;
+    z-index: 1000;
+  }
+
+  .container::-webkit-scrollbar {
+    display: none;
+  }
+
+  .card {
+    /* Cada card ocupa ~40% da tela — mostra parte do próximo */
+    min-width: 40vw;
+    scroll-snap-align: start;
+  }
+}
+
+@media (max-width: 320px) {
+  .card {
+    min-width: 60vw;
+  }
+}
