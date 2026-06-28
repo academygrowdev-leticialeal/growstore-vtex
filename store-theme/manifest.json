@@ -65,7 +65,7 @@
     "vtex.css-handles": "1.x",
     "partnersigrowdev.benefits-banner": "0.x",
     "partnersigrowdev.topbar": "0.x",
-    "partnersigrowdev.shelf-item-test": "0.x"
+    "partnersigrowdev.shelf-item": "0.x"
   },
   "peerDependencies": {},
   "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"

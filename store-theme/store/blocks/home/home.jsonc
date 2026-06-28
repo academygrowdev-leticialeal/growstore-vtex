@@ -5,11 +5,9 @@
       "list-context.image-list#demo",
       /* You can make references to blocks defined in other files.
        * For example, `flex-layout.row#deals` is defined in the `deals.json` file. */
-      // "flex-layout.row#deals",
       "__fold__",
-      "rich-text#shelf-title",
+      "flex-layout.row#growstore-categories",
       "flex-layout.row#shelf",
-      "flex-layout.row#shelf-custom",
       "info-card#home",
       "rich-text#question",
       "rich-text#link",
@@ -19,24 +17,98 @@
   },
   "benefits-banner-growstore": {
     "props": {
-      "name": "benefits"
+      "name": "John"
     }
   },
   "topbar-growstore": {
     "props": {
-      "name": "topbar"
+      "name": "Mariah"
     }
   },
   /* Início - Shelf Item */
-  "flex-layout.row#shelf-custom": {
-    "children": ["shelf-item-growstore"],
+  "flex-layout.row#growstore-categories": {
+    "children": ["flex-layout.col#home-categories"]
+  },
+  "flex-layout.col#home-categories": {
+    "children": [
+      "rich-text#home-categories-text",
+      "rich-text#home-categories-title",
+      "shelf-item-growstore"
+    ],
     "props": {
-      "blockClass": "shelf-custom"
+      "blockClass": "homeCategories"
+    }
+  },
+  "rich-text#home-categories-text": {
+    "props": {
+      "text": "Explore",
+      "blockClass": "homeCategoriesText"
+    }
+  },
+  "rich-text#home-categories-title": {
+    "props": {
+      "text": "## Categorias",
+      "blockClass": "homeCategoriesTitle"
     }
   },
   "shelf-item-growstore": {
     "props": {
-      "name": "shelf-item"
+      "categories": [
+        {
+          "icon": "👕",
+          "text": "Camisetas",
+          "link": "/camisetas",
+          "qtde": ""
+        },
+        {
+          "icon": "☕",
+          "text": "Canecas",
+          "link": "/canecas",
+          "qtde": ""
+        },
+        {
+          "icon": "🎒",
+          "text": "Mochilas",
+          "link": "/mochilas",
+          "qtde": ""
+        },
+        {
+          "icon": "🧴",
+          "text": "Garrafas",
+          "link": "/garrafas-termicas",
+          "qtde": ""
+        },
+        {
+          "icon": "🥤",
+          "text": "Copos",
+          "link": "/copos-termicos",
+          "qtde": ""
+        },
+        {
+          "text": "Blocos de Nota",
+          "icon": "📓",
+          "link": "/blocos-de-nota",
+          "qtde": ""
+        },
+        {
+          "icon": "🖊️",
+          "text": "Canetas",
+          "link": "/canetas",
+          "qtde": ""
+        },
+        {
+          "icon": "🏷️",
+          "text": "Adesivos",
+          "link": "/adesivos",
+          "qtde": ""
+        },
+        {
+          "icon": "🖱️",
+          "text": "Mousepads",
+          "link": "/mousepads",
+          "qtde": ""
+        }
+      ]
     }
   },
   /*Fim - Shelf Item */
@@ -67,12 +139,6 @@
       "infinite": true,
       "showNavigationArrows": "desktopOnly",
       "blockClass": "carousel"
-    }
-  },
-  "rich-text#shelf-title": {
-    "props": {
-      "text": "## Summer",
-      "blockClass": "shelfTitle"
     }
   },
   "flex-layout.row#shelf": {

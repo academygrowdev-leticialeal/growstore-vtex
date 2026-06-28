@@ -70,7 +70,7 @@
     padding: 140px;
   }
   .label {
-     font-size: 40px;
+    font-size: 40px;
   }
   .infoCardContainer--info-card-home .infoCardTextContainer {
     width: 30%;
@@ -111,3 +111,10 @@
 .image {
   image-rendering: -webkit-optimize-contrast;
 }
+/* CUSTOM SHELF-ITEM */
+:global(.vtex-render__container-id-growstore-categories) {
+  background-color: #0a1520;
+  padding: 64px 16px;
+}
+
+
