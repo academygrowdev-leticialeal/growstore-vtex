@@ -8,7 +8,7 @@
       "__fold__",
       "flex-layout.row#growstore-categories",
       "flex-layout.row#shelf",
-      "info-card#home",
+      "flex-layout.row#banner-highlight",
       "rich-text#question",
       "rich-text#link",
       "newsletter",
@@ -112,6 +112,23 @@
     }
   },
   /*Fim - Shelf Item */
+  /* Início - Banner Highlight */
+  "flex-layout.row#banner-highlight": {
+    "children": ["grow-store-home-banner-highlight"],
+    "props": {
+      "fullWidth": true,
+      "blockClass": "background-default"
+    }
+  },
+  "grow-store-home-banner-highlight": {
+    "props": {
+      "image": "assets/images/banner_promo.webp",
+      "title": "Mochila Tech Pro",
+      "description": "A mochila definitiva para devs. Compartimento para notebook, USB integrada e design premium.",
+      "buttonText": "Comprar Agora",
+      "buttonLink": "/mochilas"
+    }
+  },
   "list-context.image-list#demo": {
     "children": ["slider-layout#demo-images"],
     "props": {
