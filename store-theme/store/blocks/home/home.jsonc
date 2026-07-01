@@ -9,9 +9,7 @@
       "flex-layout.row#growstore-categories",
       "flex-layout.row#shelf",
       "flex-layout.row#banner-highlight",
-      "rich-text#question",
-      "rich-text#link",
-      "newsletter",
+      "brands-highlight-growstore",
       "benefits-banner-growstore"
     ]
   },
@@ -129,6 +127,11 @@
       "buttonLink": "/mochilas"
     }
   },
+  "brands-highlight-growstore": {
+    "props": {
+      "name": "Brands Highlight of GrowStore"
+    }
+  },
   "list-context.image-list#demo": {
     "children": ["slider-layout#demo-images"],
     "props": {
@@ -178,31 +181,6 @@
       "infinite": true,
       "fullWidth": false,
       "blockClass": "shelf"
-    }
-  },
-  "info-card#home": {
-    "props": {
-      "id": "info-card-home",
-      "isFullModeStyle": false,
-      "textPosition": "left",
-      "imageUrl": "https://storecomponents.vteximg.com.br/arquivos/banner-infocard2.png",
-      "headline": "Clearance Sale",
-      "callToActionText": "DISCOVER",
-      "callToActionUrl": "/sale/d",
-      "blockClass": "info-card-home",
-      "textAlignment": "center"
-    }
-  },
-  "rich-text#question": {
-    "props": {
-      "text": "**This is an example store built using the VTEX platform.\nWant to know more?**",
-      "blockClass": "question"
-    }
-  },
-  "rich-text#link": {
-    "props": {
-      "text": "\n**Reach us at**\nwww.vtex.com.br",
-      "blockClass": "link"
     }
   }
 }
