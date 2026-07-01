@@ -159,15 +159,20 @@
     }
   },
   "flex-layout.row#shelf": {
-    "children": ["list-context.product-list#demo1"]
-  },
-  "list-context.product-list#demo1": {
-    "blocks": ["product-summary.shelf"],
-    "children": ["slider-layout#demo-products"],
+    "children": ["list-context.product-list#demo1"],
     "props": {
-      "orderBy": "OrderByTopSaleDESC"
-    }
-  },
+      "blockClass": "background-default"
+  }
+    },
+
+    "list-context.product-list#demo1":{
+      "blocks": ["product-summary.shelf"],
+      "children": ["slider-layout#demo-products"],
+      "props": {
+        "orderBy": "OrderByTopSaleDESC"
+      }
+    },
+
   "slider-layout#demo-products": {
     "props": {
       "itemsPerPage": {
