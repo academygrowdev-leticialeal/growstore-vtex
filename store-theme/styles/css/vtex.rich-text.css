@@ -67,6 +67,25 @@
   font-weight: 700;
 }
 
+.paragraph--shelf-subtitle {
+  font-family: Inter, sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  color: #39b54a;
+  line-height: 20px;
+  text-transform: uppercase;
+  margin: 0 0 8px;
+}
+
+.headingLevel2--shelf-title {
+  font-family: Syne, sans-serif;
+  font-size: 30px;
+  font-weight: 900;
+  color: #fff;
+  line-height: 36px;
+  margin: 0;
+}
+
 @media only screen and (min-width: 640px) {
   .container--question .strong {
     font-size: 40px;
