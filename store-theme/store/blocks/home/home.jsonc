@@ -9,9 +9,7 @@
       "flex-layout.row#growstore-categories",
       "flex-layout.row#shelf",
       "flex-layout.row#banner-highlight",
-      "rich-text#question",
-      "rich-text#link",
-      "newsletter",
+      "flex-layout.row#brands-highlight",
       "benefits-banner-growstore"
     ]
   },
@@ -129,6 +127,31 @@
       "buttonLink": "/mochilas"
     }
   },
+  /* Início - Brands Highlight */
+  "flex-layout.row#brands-highlight": {
+    "children": ["brands-highlight-growstore"],
+    "props": {
+      "fullWidth": true,
+      "blockClass": "background-brands"
+    }
+  },
+  "brands-highlight-growstore": {
+    "props": {
+      "brands": [
+        {
+          "name": "Growdev",
+          "description": "Conectando talentos e tecnologia para transformar negócios. Formação tech, outsourcing e inovação.",
+          "link": "/growdev"
+        },
+        {
+          "name": "Growlabs",
+          "description": "Impulsionando negócios através de pessoas e tecnologia. Soluções digitais sob medida.",
+          "link": "/growlabs"
+        }
+      ]
+    }
+  },
+  /* Fim - Brands Highlight */
   "list-context.image-list#demo": {
     "children": ["slider-layout#demo-images"],
     "props": {
@@ -178,31 +201,6 @@
       "infinite": true,
       "fullWidth": false,
       "blockClass": "shelf"
-    }
-  },
-  "info-card#home": {
-    "props": {
-      "id": "info-card-home",
-      "isFullModeStyle": false,
-      "textPosition": "left",
-      "imageUrl": "https://storecomponents.vteximg.com.br/arquivos/banner-infocard2.png",
-      "headline": "Clearance Sale",
-      "callToActionText": "DISCOVER",
-      "callToActionUrl": "/sale/d",
-      "blockClass": "info-card-home",
-      "textAlignment": "center"
-    }
-  },
-  "rich-text#question": {
-    "props": {
-      "text": "**This is an example store built using the VTEX platform.\nWant to know more?**",
-      "blockClass": "question"
-    }
-  },
-  "rich-text#link": {
-    "props": {
-      "text": "\n**Reach us at**\nwww.vtex.com.br",
-      "blockClass": "link"
     }
   }
 }

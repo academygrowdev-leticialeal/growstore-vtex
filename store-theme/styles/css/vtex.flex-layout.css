@@ -43,7 +43,7 @@
 }
 
 .flexRow--deals {
-  background-color: #0F3E99;
+  background-color: #0f3e99;
   padding: 14px 0px;
 }
 
@@ -98,12 +98,18 @@
 }
 
 /* CUSTOM BANNER HIGHLIGHT */
-.flexRow--background-default{
-  background: #13203B;
+.flexRow--background-default {
+  background: #0d1b2a;
   padding: 16px;
 }
 @media (max-width: 768px) {
-  .flexRow--background-default {
+  .flexRow--background-default,
+  .flexRow--background-brands {
     padding: 20px;
   }
+}
+
+/* CUSTOM BRANDS HIGHLIGHT */
+.flexRow--background-brands {
+  background: #0d1b2a;
 }
