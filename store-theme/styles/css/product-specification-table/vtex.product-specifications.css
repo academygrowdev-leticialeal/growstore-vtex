@@ -5,3 +5,9 @@
 .specificationName {
   font-weight: bold;
 }
+
+.specificationValue--summarySpecificationText {
+  color: #fff;
+  font-family: 'Inter', sans-serif;
+  font-size: .750rem;
+}
