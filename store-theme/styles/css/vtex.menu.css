@@ -1,0 +1,34 @@
+.menuContainerNav {
+  display: flex;
+  flex-direction: column;
+  padding: 0; 
+  margin: 0; 
+  align-items: flex-start; 
+  gap: 9px; 
+}
+
+.styledLink {
+  color: #bdbdbd; 
+  text-decoration: none;
+  font-size: 14px;
+  padding: 0; 
+  margin-bottom: 6px;
+  margin: 0;
+}
+
+.styledLinkContainer {
+  padding: 0;
+  margin: 0;
+}
+
+.styledLink:hover {
+  color: #10c66f; 
+}
+
+.menuItem {
+  list-style: none;
+  margin: 0;
+  margin-bottom: 12px; 
+  padding: 0;
+  display: flex;
+}
