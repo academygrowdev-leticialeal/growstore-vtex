@@ -69,7 +69,8 @@
   background-color: #162032;
   border-radius: 16px;
   padding-bottom: 16px;
-  height: max-content;
+  min-height: 470px;
+  display: flex;
 }
 
 .element:hover{
