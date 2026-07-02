@@ -2,13 +2,15 @@
   "store.home": {
     "blocks": [
       "home-banner",
+      "benefits-banner-growstore",
+      "topbar-growstore",
+      "list-context.image-list#demo",
       /* You can make references to blocks defined in other files.
        * For example, `flex-layout.row#deals` is defined in the `deals.json` file. */
-      "flex-layout.row#deals",
       "__fold__",
-      "rich-text#shelf-title",
+      "flex-layout.row#growstore-categories",
       "flex-layout.row#shelf",
-      "info-card#home",
+      "flex-layout.row#banner-highlight",
       "rich-text#question",
       "rich-text#link",
       "newsletter"
@@ -20,18 +22,155 @@
       "blockClass": "shelfTitle"
     }
   },
-  "flex-layout.row#shelf": {
+  "benefits-banner-growstore": {
+    "props": {
+      "name": "John"
+    }
+  },
+  "topbar-growstore": {
+    "props": {
+      "name": "Mariah"
+    }
+  },
+  /* Início - Shelf Item */
+  "flex-layout.row#growstore-categories": {
+    "children": ["flex-layout.col#home-categories"]
+  },
+  "flex-layout.col#home-categories": {
     "children": [
-      "list-context.product-list#demo1"
-    ]
+      "rich-text#home-categories-text",
+      "rich-text#home-categories-title",
+      "shelf-item-growstore"
+    ],
+    "props": {
+      "blockClass": "homeCategories"
+    }
+  },
+  "rich-text#home-categories-text": {
+    "props": {
+      "text": "Explore",
+      "blockClass": "homeCategoriesText"
+    }
+  },
+  "rich-text#home-categories-title": {
+    "props": {
+      "text": "## Categorias",
+      "blockClass": "homeCategoriesTitle"
+    }
+  },
+  "shelf-item-growstore": {
+    "props": {
+      "categories": [
+        {
+          "icon": "👕",
+          "text": "Camisetas",
+          "link": "/camisetas",
+          "qtde": ""
+        },
+        {
+          "icon": "☕",
+          "text": "Canecas",
+          "link": "/canecas",
+          "qtde": ""
+        },
+        {
+          "icon": "🎒",
+          "text": "Mochilas",
+          "link": "/mochilas",
+          "qtde": ""
+        },
+        {
+          "icon": "🧴",
+          "text": "Garrafas",
+          "link": "/garrafas-termicas",
+          "qtde": ""
+        },
+        {
+          "icon": "🥤",
+          "text": "Copos",
+          "link": "/copos-termicos",
+          "qtde": ""
+        },
+        {
+          "text": "Blocos de Nota",
+          "icon": "📓",
+          "link": "/blocos-de-nota",
+          "qtde": ""
+        },
+        {
+          "icon": "🖊️",
+          "text": "Canetas",
+          "link": "/canetas",
+          "qtde": ""
+        },
+        {
+          "icon": "🏷️",
+          "text": "Adesivos",
+          "link": "/adesivos",
+          "qtde": ""
+        },
+        {
+          "icon": "🖱️",
+          "text": "Mousepads",
+          "link": "/mousepads",
+          "qtde": ""
+        }
+      ]
+    }
+  },
+  /*Fim - Shelf Item */
+  /* Início - Banner Highlight */
+  "flex-layout.row#banner-highlight": {
+    "children": ["grow-store-home-banner-highlight"],
+    "props": {
+      "fullWidth": true,
+      "blockClass": "background-default"
+    }
+  },
+  "grow-store-home-banner-highlight": {
+    "props": {
+      "image": "assets/images/banner_promo.webp",
+      "title": "Mochila Tech Pro",
+      "description": "A mochila definitiva para devs. Compartimento para notebook, USB integrada e design premium.",
+      "buttonText": "Comprar Agora",
+      "buttonLink": "/mochilas"
+    }
+  },
+  "list-context.image-list#demo": {
+    "children": ["slider-layout#demo-images"],
+    "props": {
+      "height": 570,
+      "preload": true,
+      "images": [
+        {
+          "image": "https://storecomponents.vteximg.com.br/arquivos/Class&Style-desktop.png",
+          "mobileImage": "https://storecomponents.vteximg.com.br/arquivos/Class&Style-mobile.png"
+        },
+        {
+          "image": "https://storecomponents.vteximg.com.br/arquivos/banner-decoration.png",
+          "mobileImage": "https://storecomponents.vteximg.com.br/arquivos/banner-decoration-mobile.png"
+        }
+      ]
+    }
+  },
+  "slider-layout#demo-images": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "infinite": true,
+      "showNavigationArrows": "desktopOnly",
+      "blockClass": "carousel"
+    }
+  },
+  "flex-layout.row#shelf": {
+    "children": ["list-context.product-list#demo1"]
   },
   "list-context.product-list#demo1": {
-    "blocks": [
-      "product-summary.shelf"
-    ],
-    "children": [
-      "slider-layout#demo-products"
-    ],
+    "blocks": ["product-summary.shelf"],
+    "children": ["slider-layout#demo-products"],
     "props": {
       "orderBy": "OrderByTopSaleDESC"
     }

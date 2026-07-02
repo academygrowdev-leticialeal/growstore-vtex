@@ -1,0 +1,9 @@
+query GetCategoryCount($category: String!) {
+  productSearch(
+    selectedFacets: [{ key: "c", value: $category }]
+    from: 0
+    to: 0
+  ) @context(provider: "vtex.search-graphql") {
+    recordsFiltered
+  }
+}

@@ -96,3 +96,14 @@
 .flexRow--addToCartRow {
   padding-bottom: 1rem;
 }
+
+/* CUSTOM BANNER HIGHLIGHT */
+.flexRow--background-default{
+  background: #13203B;
+  padding: 16px;
+}
+@media (max-width: 768px) {
+  .flexRow--background-default {
+    padding: 20px;
+  }
+}

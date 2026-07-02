@@ -6,7 +6,8 @@
     "styles": "2.x",
     "store": "0.x",
     "sitemap": "0.x",
-    "docs": "0.x"
+    "docs": "0.x",
+    "assets": "0.x"
   },
   "mustUpdateAt": "2018-09-05",
   "scripts": {
@@ -63,7 +64,11 @@
     "vtex.tab-layout": "0.x",
     "vtex.condition-layout": "2.x",
     "vtex.css-handles": "1.x",
-    "partnersigrowdev.home-banner": "0.x"
+    "partnersigrowdev.home-banner": "0.x",
+    "partnersigrowdev.benefits-banner": "0.x",
+    "partnersigrowdev.topbar": "0.x",
+    "partnersigrowdev.shelf-item": "0.x",
+    "partnersigrowdev.banner-highlight": "0.x"
   },
   "peerDependencies": {},
   "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"

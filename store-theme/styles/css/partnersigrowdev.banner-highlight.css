@@ -1,0 +1,97 @@
+/* Força o reset de qualquer padding vindo do layout VTEX para esta row */
+
+.flexRow--row-banner-highlight {
+  padding: 0 !important;
+}
+.banner {
+  position: relative;
+  width: 100%;
+  min-height: 400px;
+  border-radius: 24px;
+  overflow: hidden;
+
+  background-size: cover;
+  background-position: center;
+  margin: 32px 0;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    90deg,
+    rgba(0, 8, 20, 0.92) 0%,
+    rgba(0, 8, 20, 0.8) 35%,
+    rgba(0, 8, 20, 0.15) 70%,
+    transparent 100%
+  );
+}
+
+.content {
+  position: relative;
+  z-index: 2;
+  max-width: 420px;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+}
+
+.badge {
+  width: fit-content;
+  padding: 8px 14px;
+  margin-bottom: 20px;
+  border-radius: 999px;
+  background: rgba(255, 160, 0, 0.15);
+  border: 1px solid rgba(255, 160, 0, 0.4);
+  color: #ff9d1a;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.title {
+  margin: 0 0 16px;
+  font-family: "Syne", sans-serif;
+  color: #fff;
+  font-size: clamp(24px, 4vw, 36px);
+  line-height: 0.95;
+  font-weight: 800;
+}
+
+.description {
+  margin: 0 0 24px;
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.button {
+  width: fit-content;
+  padding: 14px 28px;
+  border-radius: 14px;
+  background: #ff9d1a;
+  color: #fff;
+  font-family: "Syne", sans-serif;
+  font-weight: 700;
+  text-decoration: none;
+  transition: 0.2s ease;
+}
+
+.button:hover {
+  transform: translateY(-2px);
+  filter: brightness(1.05);
+}
+
+@media (max-width: 768px) {
+  .content {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .banner {
+    background-position-x: 420px;
+
+  }
+}
