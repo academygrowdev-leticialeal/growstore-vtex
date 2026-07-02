@@ -32,3 +32,22 @@
   padding: 0;
   display: flex;
 }
+
+.styledLinkContainer--item-email::before {
+  content: url('https://partnersigrowdev.vtexassets.com/assets/vtex.file-manager-graphql/images/a697d5a6-a5f5-4154-a4f0-cef2d9e5e40c___e3e2ee8b94342fd029aa9deb33843909.svg');
+  margin-right: 8px;
+}
+.styledLinkContainer--item-phone::before{
+content: url('https://partnersigrowdev.vtexassets.com/assets/vtex.file-manager-graphql/images/c1e92347-ac8a-41d1-a064-9f64cb2fc0d9___14e850a6175aaf4dadfae5ef373d794b.svg');
+  margin-right: 8px;
+}
+.styledLinkContainer--item-local::before{
+content: url('https://partnersigrowdev.vtexassets.com/assets/vtex.file-manager-graphql/images/8c658032-da67-4b64-ba35-89331ef5456b___67f53ad664831e37da148eda6891ca26.svg');
+  margin-right: 8px;
+}
+
+.styledLinkContainer--item-local,
+.styledLinkContainer--item-phone,
+.styledLinkContainer--item-email{
+  display: flex;
+}
