@@ -59,10 +59,32 @@
   padding-bottom: 32px;
 }
 
-
 .flexRow--shelf_pdp {
   padding-bottom: 25px;
   padding-top: 25px;
+}
+
+.flexRowContent--selling-price_pdp {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.flexRowContent--buy-button_pdp .stretchChildrenWidth:first-child {
+  width: 90% !important;
+}
+
+.flexRowContent--buy-button_pdp .stretchChildrenWidth:last-child {
+  width: 40px !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flexRowContent--buy-button_pdp {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
 }
 
 @media (max-width: 800px) {

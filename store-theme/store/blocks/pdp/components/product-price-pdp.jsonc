@@ -18,6 +18,7 @@
     },
     "children": [
       "product-selling-price#pdp",
+      "pdp-installments",
       "product-installments"
     ]
   },
