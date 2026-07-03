@@ -1,0 +1,33 @@
+.sellingPrice--selling-price_pdp {
+  color: #fff;
+}
+
+.sellingPriceValue--selling-price_pdp {
+  font-family: Syne, sans-serif;
+  color: #39b54a;
+  font-size: 36px;
+  line-height: 40px;
+  font-weight: 900;
+}
+
+.currencyContainer--list-price_pdp {
+  color: hsla(0, 0%, 100%, .4);
+  text-decoration: line-through;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+}
+
+.savings--saving-price_pdp {
+  color: #ff6467;
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 500;
+  margin-top: 4px
+}
+
+@media (max-width: 800px) {
+  .sellingPriceValue--selling-price_pdp{
+    font-size: 25px;
+  }
+}

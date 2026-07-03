@@ -1,0 +1,21 @@
+.term,
+.link,
+.arrow {
+  color: hsla(0, 0%, 100%, .7);
+  font-size: 12px;
+}
+
+.homeIcon{
+  width: 16px;
+}
+
+.term:hover,
+.link:hover {
+  cursor: pointer;
+  color: #fff;
+}
+
+.homeIcon:hover{
+  cursor: pointer;
+  color: #fff
+}

@@ -1,0 +1,16 @@
+.shareButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px !important;
+  height: 40px;
+  border-radius: 16px;
+  border: 1px solid #4b5563;
+  background: transparent;
+  color: #a0aec0;;
+  cursor: pointer;
+}
+
+.shareButton:hover {
+  border-color: #FFFFFF;
+}

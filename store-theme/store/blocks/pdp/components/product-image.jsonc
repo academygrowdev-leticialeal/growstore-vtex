@@ -1,0 +1,16 @@
+{
+  "flex-layout.row#product-image": {
+    "children": [
+      "product-images"
+    ]
+  },
+
+  "product-images": {
+    "props": {
+      "aspectRatio": {
+        "desktop": "auto"
+      },
+      "displayThumbnailsArrows": true
+    }
+  }
+}
