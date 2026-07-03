@@ -1,0 +1,110 @@
+.flexRow--shelf_pdp,
+.flexRow--product-main,
+.flexRow--product-description_pdp,
+.flexRow--specifications-title_pdp,
+.flexRow--productSpecificationGroup,
+.flexRow--breadcrumb-pdp {
+  background-color: #0d1b2a;
+}
+
+.flexRowContent--breadcrumb-pdp {
+  padding: 10px 0;
+}
+
+.flexRowContent--product-main {
+  display: flex;
+  gap: 25px;
+}
+
+.flexRow--container_selling-price_pdp {
+  background: #162032;
+  border: 1px solid hsla(0, 0%, 100%, .08);
+  border-radius: 24px;
+  padding: 16px;
+}
+
+.flexRowContent--list-price_pdp {
+  display: flex;
+  flex-direction: column;
+}
+
+.flexRowContent--container_selling-price_pdp {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  margin-bottom: 12px;
+}
+
+.flexRow--product-name {
+  margin-bottom: .5rem;
+}
+
+.flexRow--buy-button_pdp :global(.vtex-button) {
+  background: #39b54a;
+  border-color: #39b54a;
+  border-radius: 16px;
+  height: 52px;
+}
+
+.flexRow--buy-button_pdp :global(.vtex-button):hover {
+  background: #2ea040;
+  border: 1px solid #2ea040;
+}
+
+.flexRow--product-description_pdp {
+  padding-top: 2rem;
+}
+
+.flexRow--productSpecificationGroup {
+  padding-bottom: 32px;
+}
+
+.flexRow--shelf_pdp {
+  padding-bottom: 25px;
+  padding-top: 25px;
+}
+
+.flexRowContent--selling-price_pdp {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.flexRowContent--buy-button_pdp .stretchChildrenWidth:first-child {
+  width: 90% !important;
+}
+
+.flexRowContent--buy-button_pdp .stretchChildrenWidth:last-child {
+  width: 40px !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flexRowContent--buy-button_pdp {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+@media (max-width: 800px) {
+  .flexRowContent--product-main {
+    flex-direction: column;
+  }
+
+  .flexRowContent--container_selling-price_pdp {
+    flex-direction: column-reverse;
+    gap: 0;
+  }
+
+  .flexRowContent--list-price_pdp {
+    flex-direction: row;
+    gap: 10px;
+    align-items: flex-start;
+  }
+
+  .flexRow--buy-button_pdp :global(.vtex-button) {
+    height: 40px;
+    font-size: 14px;
+  }
+}

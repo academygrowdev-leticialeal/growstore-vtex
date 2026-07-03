@@ -1,0 +1,10 @@
+{
+  "flex-layout.row#product-breadcrumb": {
+    "props": {
+      "blockClass": "breadcrumb-pdp"
+    },
+    "children": [
+      "breadcrumb"
+    ]
+  }
+}

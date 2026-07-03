@@ -1,30 +1,17 @@
 {
   "store.home": {
     "blocks": [
-      "topbar-growstore",
-      "list-context.image-list#demo",
+      "home-banner",
       /* You can make references to blocks defined in other files.
        * For example, `flex-layout.row#deals` is defined in the `deals.json` file. */
       "__fold__",
       "flex-layout.row#growstore-categories",
       "flex-layout.row#shelf",
       "flex-layout.row#banner-highlight",
-      "rich-text#question",
-      "rich-text#link",
-      "newsletter",
-      "benefits-banner-growstore"
+      "flex-layout.row#brands-highlight"
     ]
   },
-  "benefits-banner-growstore": {
-    "props": {
-      "name": "John"
-    }
-  },
-  "topbar-growstore": {
-    "props": {
-      "name": "Mariah"
-    }
-  },
+
   /* Início - Shelf Item */
   "flex-layout.row#growstore-categories": {
     "children": ["flex-layout.col#home-categories"]
@@ -145,35 +132,31 @@
       "buttonLink": "/mochilas"
     }
   },
-  "list-context.image-list#demo": {
-    "children": ["slider-layout#demo-images"],
+  /* Início - Brands Highlight */
+  "flex-layout.row#brands-highlight": {
+    "children": ["brands-highlight-growstore"],
     "props": {
-      "height": 570,
-      "preload": true,
-      "images": [
+      "fullWidth": true,
+      "blockClass": "background-brands"
+    }
+  },
+  "brands-highlight-growstore": {
+    "props": {
+      "brands": [
         {
-          "image": "https://storecomponents.vteximg.com.br/arquivos/Class&Style-desktop.png",
-          "mobileImage": "https://storecomponents.vteximg.com.br/arquivos/Class&Style-mobile.png"
+          "name": "Growdev",
+          "description": "Conectando talentos e tecnologia para transformar negócios. Formação tech, outsourcing e inovação.",
+          "link": "/growdev"
         },
         {
-          "image": "https://storecomponents.vteximg.com.br/arquivos/banner-decoration.png",
-          "mobileImage": "https://storecomponents.vteximg.com.br/arquivos/banner-decoration-mobile.png"
+          "name": "Growlabs",
+          "description": "Impulsionando negócios através de pessoas e tecnologia. Soluções digitais sob medida.",
+          "link": "/growlabs"
         }
       ]
     }
   },
-  "slider-layout#demo-images": {
-    "props": {
-      "itemsPerPage": {
-        "desktop": 1,
-        "tablet": 1,
-        "phone": 1
-      },
-      "infinite": true,
-      "showNavigationArrows": "desktopOnly",
-      "blockClass": "carousel"
-    }
-  },
+  /* Fim - Brands Highlight */
   "flex-layout.row#shelf": {
     "children": ["flex-layout.col#shelf-container"],
     "props": {
@@ -209,31 +192,6 @@
       "infinite": true,
       "fullWidth": false,
       "blockClass": "shelf"
-    }
-  },
-  "info-card#home": {
-    "props": {
-      "id": "info-card-home",
-      "isFullModeStyle": false,
-      "textPosition": "left",
-      "imageUrl": "https://storecomponents.vteximg.com.br/arquivos/banner-infocard2.png",
-      "headline": "Clearance Sale",
-      "callToActionText": "DISCOVER",
-      "callToActionUrl": "/sale/d",
-      "blockClass": "info-card-home",
-      "textAlignment": "center"
-    }
-  },
-  "rich-text#question": {
-    "props": {
-      "text": "**This is an example store built using the VTEX platform.\nWant to know more?**",
-      "blockClass": "question"
-    }
-  },
-  "rich-text#link": {
-    "props": {
-      "text": "\n**Reach us at**\nwww.vtex.com.br",
-      "blockClass": "link"
     }
   }
 }

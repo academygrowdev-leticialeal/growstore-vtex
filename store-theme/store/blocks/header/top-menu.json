@@ -1,43 +1,99 @@
 {
-  "vtex.menu@2.x:menu#websites": {
+  "vtex.menu@2.x:menu#navigation": {
     "children": [
-      "menu-item#shop",
-      "menu-item#about-us"
+      "menu-item#products",
+      "menu-item#growdev",
+      "menu-item#growlabs",
+      "menu-item#news",
+      "menu-item#offers"
     ]
   },
-  "menu-item#shop": {
+  "menu-item#products": {
     "props": {
-      "id": "menu-item-shop",
+      "id": "menu-item-products",
       "type": "custom",
-      "iconId": null,
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "#",
+        "href": "/products",
         "noFollow": false,
-        "tagTitle": "Shop",
-        "text": "Shop"
-      }
-    }
-  },
-  "vtex.menu@2.x:menu#institutional": {
-    "children": [
-      "menu-item#vtex-website"
+        "tagTitle": "products",
+        "text": "Products"
+      },
+      "blockClass": [
+        "nav-item"
+      ]
+    },
+    "blocks": [
+      "vtex.menu@2.x:submenu#products-submenu"
     ]
   },
-  "menu-item#vtex-website": {
+  "menu-item#growdev": {
     "props": {
-      "id": "menu-item-vtex-website",
+      "id": "menu-item-growdev",
       "type": "custom",
-      "iconId": null,
       "highlight": false,
       "itemProps": {
-        "type": "external",
-        "href": "http://vtex.com",
+        "type": "internal",
+        "href": "/growdev",
         "noFollow": false,
-        "tagTitle": "visit vtex.com",
-        "text": "visit vtex.com"
-      }
+        "tagTitle": "growdev",
+        "text": "Growdev"
+      },
+      "blockClass": [
+        "nav-item"
+      ]
+    }
+  },
+  "menu-item#growlabs": {
+    "props": {
+      "id": "menu-item-growlabs",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/growlabs",
+        "noFollow": false,
+        "tagTitle": "growlabs",
+        "text": "Growlabs"
+      },
+      "blockClass": [
+        "nav-item"
+      ]
+    }
+  },
+  "menu-item#news": {
+    "props": {
+      "id": "menu-item-news",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/news",
+        "noFollow": false,
+        "tagTitle": "news",
+        "text": "News"
+      },
+      "blockClass": [
+        "nav-item"
+      ]
+    }
+  },
+  "menu-item#offers": {
+    "props": {
+      "id": "menu-item-offers",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/offers",
+        "noFollow": false,
+        "tagTitle": "offers",
+        "text": "Offers"
+      },
+      "blockClass": [
+        "nav-item"
+      ]
     }
   }
 }

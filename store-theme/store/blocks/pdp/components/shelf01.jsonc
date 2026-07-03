@@ -1,0 +1,33 @@
+{
+  "flex-layout.row#shelf-01_pdp": {
+    "props": {
+      "blockClass": "shelf_pdp"
+    },
+    "children": [
+      "flex-layout.col#shelf-01_pdp"
+    ]
+  },
+  "flex-layout.col#shelf-01_pdp": {
+    "props": {
+      "blockClass": "shelf_pdp"
+    },
+    "children": [
+      "rich-text#shelf01-title_pdp",
+      "flex-layout.row#shelf01_pdp"
+    ]
+  },
+  "rich-text#shelf01-title_pdp": {
+    "props": {
+      "text": "## Mais vendidos",
+      "blockClass": "shelfTitle_pdp"
+    }
+  },
+  "flex-layout.row#shelf01_pdp": {
+    "props": {
+      "blockClass": "shelf01_pdp"
+    },
+    "children": [
+      "list-context.product-list#demo1"
+    ]
+  }
+}
