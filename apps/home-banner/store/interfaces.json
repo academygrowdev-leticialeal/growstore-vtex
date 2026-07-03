@@ -1,0 +1,6 @@
+{
+  "home-banner": {
+    "component": "HomeBanner",
+    "composition": "children"
+  }
+}

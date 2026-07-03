@@ -64,8 +64,7 @@
     "vtex.tab-layout": "0.x",
     "vtex.condition-layout": "2.x",
     "vtex.css-handles": "1.x",
-    "partnersigrowdev.benefits-banner": "0.x",
-    "partnersigrowdev.topbar": "0.x",
+    "partnersigrowdev.home-banner": "0.x",
     "partnersigrowdev.shelf-item": "0.x",
     "partnersigrowdev.banner-highlight": "0.x",
     "partnersigrowdev.brands-highlight": "0.x"
