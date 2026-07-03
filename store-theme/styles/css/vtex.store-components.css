@@ -1,9 +1,9 @@
 .notificationBarContainer {
-  background-color: #e6f1e6;
-  color: #03034e;
+  color: #fff;
+  background-color: #3FC751;
   font-weight: 700;
   font-size: 12px;
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 .infoCardContainer--info-card-home {

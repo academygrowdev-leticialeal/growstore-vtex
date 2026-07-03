@@ -23,7 +23,12 @@
 }
 
 .flexRowContent--main-header {
-  background-color: #f0f0f0;
+  background-color: #0A1520 !important;
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  padding: 10px;
+  height: 50px;
 }
 
 .flexRowContent--main-header-mobile {
