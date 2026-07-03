@@ -1,0 +1,30 @@
+.trigger--disclosure-search {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    max-height: 34px;
+    margin-right: .5rem;
+}
+
+.trigger--disclosure-search--visible {
+    max-height: none;
+}
+
+.trigger--disclosure-search--visible :global(.vtex-store-components-3-x-imageElement--disclosure-search) {
+    display: none;
+}
+
+.trigger--disclosure-search--visible::after {
+    content: "X";
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 18px;
+}
+
+.trigger--disclosure-search--visible:hover::after {
+    color: #fff;
+}
+
+.content--disclosure-search {
+    margin-right: 8px;
+}

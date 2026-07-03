@@ -1,21 +1,17 @@
 {
   "vendor": "partnersigrowdev",
-  "name": "benefits-banner",
+  "name": "home-banner",
   "version": "0.0.1",
-  "title": "Benefits Banner App",
-  "description": "Benefits Banner App of GrowStore",
+  "title": "Home Banner",
+  "description": "Banner principal da home editável pelo Site Editor",
   "builders": {
     "react": "3.x",
     "messages": "1.x",
     "docs": "0.x",
-    "store": "0.x"
+    "store": "0.x",
+    "styles": "2.x"
   },
-  "dependencies": {
-    "vtex.product-context": "0.x"
-  },
-  "registries": [
-    "smartcheckout"
-  ],
+  "dependencies": {},
   "policies": [],
   "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"
 }

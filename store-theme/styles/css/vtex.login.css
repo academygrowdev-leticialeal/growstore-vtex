@@ -1,0 +1,45 @@
+.container {
+    margin-right: .725rem;
+}
+
+.container :global(.icon-login-desktop) {
+    color: #fff;
+}
+
+.container :global(.vtex-button.hover-b--transparent):hover {
+    background-color: #ffffff0d;
+}
+
+.container :global(.vtex-button) {
+    min-height: 0;
+    margin: 0;
+    padding: 6px;
+    border-radius: 12px;
+}
+
+.container :global(.vtex-button)::after {
+    content: "";
+    background-image: url("https://partnersigrowdev.vtexassets.com/assets/vtex.file-manager-graphql/images/e90d362d-0c90-493f-86f7-304c5a454456___c99f0c6558da989f431f259c69e1441c.svg");
+    display: block;
+    width: 18px;
+    height: 18px;
+    opacity: 0.6;
+}
+
+.container :global(.vtex-button):hover::after {
+    opacity: 1;
+}
+
+.container :global(.vtex-button__label) {
+    display: none;
+}
+
+.profileIcon {
+    color: #fff;
+    opacity: 0.6;
+    padding: 8px;
+}
+
+.profileIcon:hover {
+    opacity: 1;
+}

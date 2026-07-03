@@ -1,0 +1,47 @@
+.minicartIconContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    background-color: #39b54a;
+    padding: 8px;
+    border-radius: 8px;
+}
+
+.openIconContainer {
+    padding: 0;
+}
+
+.openIconContainer :global(.vtex-button) {
+    min-height: 0;
+    border: none;
+}
+
+.openIconContainer :global(.vtex-button):hover {
+    background-color: transparent;
+}
+
+.openIconContainer :global(.vtex-buttton__label) {
+    padding: 0;
+}
+
+.cartIcon {
+    display: none;
+}
+
+.minicartIconContainer::before {
+    content: "";
+    background-image: url("https://partnersigrowdev.vtexassets.com/assets/vtex.file-manager-graphql/images/4530b861-c183-4018-a077-33f79f0743e5___25b108f4172e69366e9753863e2c86a1.svg");
+    display: block;
+    width: 16px;
+    height: 16px;
+}
+
+.minicartIconContainer::after {
+    content: "Carrinho";
+    color: #fff;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 500;
+    text-transform: none;
+}
