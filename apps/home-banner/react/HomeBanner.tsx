@@ -30,9 +30,9 @@ const HomeBanner: HomeBannerComponent = ({
   highlightedWord = 'Growdevers',
   subtitle = 'Produtos exclusivos e customizados das marcas Growdev e Growlabs. Para quem vive e respira tecnologia.',
   btnPrimaryLabel = 'Ver Todos os Produtos →',
-  btnPrimaryHref = '/',
-  btnSecondaryLabel = 'Camisetas',
-  btnSecondaryHref = '/camisetas',
+  btnPrimaryHref = '/growlabs',
+  btnSecondaryLabel = 'Growdev',
+  btnSecondaryHref = '/growdev',
   stat1Number = '9+',
   stat1Label = 'Categorias',
   stat2Number = '50+',
@@ -43,42 +43,39 @@ const HomeBanner: HomeBannerComponent = ({
   imageAlt = 'Produtos Grow',
 }) => {
   return (
-    <>
-      <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet" />
-      <div className={styles.homeBanner}>
-        <img src={imageUrl} alt={imageAlt} className={styles.bannerImage} />
-        <div className={styles.bannerContent}>
-          <span className={styles.bannerTag}>{tag}</span>
-          <h1 className={styles.bannerTitle}>
-            {title.split(' ').map((word, index) => (
-              <span key={index}>
-                {word}<br />
-              </span>
-            ))}
-            <span className={styles.bannerHighlight}>{highlightedWord}</span>
-          </h1>
-          <p className={styles.bannerSubtitle}>{subtitle}</p>
-          <div className={styles.bannerButtons}>
-            <a href={btnPrimaryHref} className={styles.btnPrimary}>{btnPrimaryLabel}</a>
-            <a href={btnSecondaryHref} className={styles.btnSecondary}>{btnSecondaryLabel}</a>
+    <div className={styles.homeBanner}>
+      <img src={imageUrl} alt={imageAlt} className={styles.bannerImage} />
+      <div className={styles.bannerContent}>
+        <span className={styles.bannerTag}>{tag}</span>
+        <h1 className={styles.bannerTitle}>
+          {title.split(' ').map((word, index) => (
+            <span key={index}>
+              {word}<br />
+            </span>
+          ))}
+          <span className={styles.bannerHighlight}>{highlightedWord}</span>
+        </h1>
+        <p className={styles.bannerSubtitle}>{subtitle}</p>
+        <div className={styles.bannerButtons}>
+          <a href={btnPrimaryHref} className={styles.btnPrimary}>{btnPrimaryLabel}</a>
+          <a href={btnSecondaryHref} className={styles.btnSecondary}>{btnSecondaryLabel}</a>
+        </div>
+        <div className={styles.bannerStats}>
+          <div className={styles.statItem}>
+            <strong>{stat1Number}</strong>
+            <span>{stat1Label}</span>
           </div>
-          <div className={styles.bannerStats}>
-            <div className={styles.statItem}>
-              <strong>{stat1Number}</strong>
-              <span>{stat1Label}</span>
-            </div>
-            <div className={styles.statItem}>
-              <strong>{stat2Number}</strong>
-              <span>{stat2Label}</span>
-            </div>
-            <div className={styles.statItem}>
-              <strong>{stat3Number}</strong>
-              <span>{stat3Label}</span>
-            </div>
+          <div className={styles.statItem}>
+            <strong>{stat2Number}</strong>
+            <span>{stat2Label}</span>
+          </div>
+          <div className={styles.statItem}>
+            <strong>{stat3Number}</strong>
+            <span>{stat3Label}</span>
           </div>
         </div>
       </div>
-    </>
+    </div>
   )
 }
 
@@ -92,9 +89,9 @@ HomeBanner.schema = {
     highlightedWord: { title: 'Palavra destacada', type: 'string', default: 'Growdevers' },
     subtitle: { title: 'Subtítulo', type: 'string', default: 'Produtos exclusivos...' },
     btnPrimaryLabel: { title: 'Botão primário - texto', type: 'string', default: 'Ver Todos os Produtos →' },
-    btnPrimaryHref: { title: 'Botão primário - link', type: 'string', default: '/' },
-    btnSecondaryLabel: { title: 'Botão secundário - texto', type: 'string', default: 'Camisetas' },
-    btnSecondaryHref: { title: 'Botão secundário - link', type: 'string', default: '/camisetas' },
+    btnPrimaryHref: { title: 'Botão primário - link', type: 'string', default: '/growlabs' },
+    btnSecondaryLabel: { title: 'Botão secundário - texto', type: 'string', default: 'Growdev' },
+    btnSecondaryHref: { title: 'Botão secundário - link', type: 'string', default: '/growdev' },
     stat1Number: { title: 'Stat 1 - número', type: 'string', default: '9+' },
     stat1Label: { title: 'Stat 1 - label', type: 'string', default: 'Categorias' },
     stat2Number: { title: 'Stat 2 - número', type: 'string', default: '50+' },
