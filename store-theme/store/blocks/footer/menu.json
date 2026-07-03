@@ -212,8 +212,8 @@
     "children": [
       "rich-text#menu-item-institutional",
       "menu-item#sobre-nos",
-      "menu-item#growdev",
-      "menu-item#growlabs",
+      "menu-item#growdev-footer",  
+      "menu-item#growlabs-footer",
       "menu-item#privacidade",
       "menu-item#termos",
       "menu-item#trocas",
@@ -241,12 +241,13 @@
       }
     }
   },
-  "menu-item#growdev": {
+  "menu-item#growdev-footer": {
     "props": {
-      "id": "menu-item#growdev",
+      "id": "menu-item#growdev-footer",
       "type": "custom",
       "iconId": null,
       "highlight": false,
+      "blockClass": "footer-item",
       "itemProps": {
         "type": "internal",
         "href": "/growdev",
@@ -256,12 +257,13 @@
       }
     }
   },
-  "menu-item#growlabs": {
+  "menu-item#growlabs-footer": {
     "props": {
-      "id": "menu-item#growlabs",
+      "id": "menu-item#growlabs-footer",
       "type": "custom",
       "iconId": null,
       "highlight": false,
+      "blockClass": "footer-item",
       "itemProps": {
         "type": "internal",
         "href": "/growlabs",
@@ -680,8 +682,8 @@
     },
     "children": [
       "menu-item#sobre-nos",
-      "menu-item#growdev",
-      "menu-item#growlabs",
+      "menu-item#growdev-footer",
+      "menu-item#growlabs-footer",
       "menu-item#privacidade",
       "menu-item#termos",
       "menu-item#trocas",
