@@ -8,10 +8,12 @@
 }
 
 .flexCol--productSpecificationName {
+  color: #fff;
   padding: 1rem;
 }
 
 .flexCol--productSpecificationValue {
+  color: #fff;
   padding: 1rem 1rem 1rem 0;
 }
 

@@ -8,3 +8,35 @@
   top: 0;
   left: auto;
 }
+
+.stackItem--shelfSummary{
+  display: none;
+  align-items: center;
+  justify-content: center;
+  bottom: 6px;
+  top: inherit;
+  width: 100%;
+}
+
+.stackItem--collectionHighlight {
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 10px;
+  top: 10px;
+  left: 10px;
+}
+
+.stackItem--shelfSummary :global(.vtex-button) {
+  background: #39b54a;
+  border: 1px solid #39b54a;
+  border-radius: 12px;
+  max-width: 250px;
+  font-size: 14px;
+  padding: 8px;
+  text-transform: none;
+}
+
+.stackItem--shelfSummary :global(.vtex-button):hover {
+  background: #2ea040;
+  border: 1px solid #2ea040;
+}

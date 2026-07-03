@@ -9,7 +9,7 @@
 }
 
 .card {
-  background: #13203b;
+  background: #0D1B2A;
   border-radius: 16px;
   min-height: 120px;
   display: flex;
@@ -19,7 +19,7 @@
   text-decoration: none;
   transition: all 0.2s ease;
   cursor: pointer;
-  border: 1px solid #13203b;
+  border: 1px solid #0D1B2A;
   flex-shrink: 0;
 }
 

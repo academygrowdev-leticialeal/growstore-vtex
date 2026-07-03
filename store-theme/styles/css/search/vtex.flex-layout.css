@@ -13,12 +13,13 @@
 .flexRow--buyNowButton :global(.vtex-button) {
   background: #eef3f7;
   border-color:#eef3f7;
-  color: #0f3e99;
+  margin-right: 10px;
+  color: #399439;
 }
 
 .flexRow--buyNowButton:hover :global(.vtex-button) {
-  background: #dbe9fd;
-  border-color:#dbe9fd;
+  background: #e2ffe2;
+  border-color:#e2ffe2;
 }
 
 .flexCol--productRating {
@@ -30,5 +31,6 @@
 }
 
 .flexCol--summaryUpDetailsListMobile {
-  margin-bottom: 0.25rem
+  margin-bottom: 0.25rem;
+  color: #fff
 }
