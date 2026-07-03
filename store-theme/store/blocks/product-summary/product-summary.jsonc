@@ -66,18 +66,6 @@
       "blockClass": "summary"
     }
   },
-  "flex-layout.row#selling-price-savings": {
-    "props": {
-      "colGap": 2,
-      "preserveLayoutOnMobile": true,
-      "preventHorizontalStretch": true,
-      "marginBottom": 4
-    },
-    "children": [
-      "product-selling-price#summary",
-      "product-price-savings#summary"
-    ]
-  },
   "product-installments#summary": {
     "props": {
       "blockClass": "summary"
