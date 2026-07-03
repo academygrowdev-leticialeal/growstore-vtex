@@ -1,22 +1,92 @@
 .galleryLayoutOptionButton {
-  background-color: #F0F0F0;
+  background-color: #162032;
   color: #3F3F40;
   padding: 0.375rem 0.75rem 0.375rem 0.75rem;
 }
 
 .galleryLayoutOptionButton--selected {
-  background-color: #3F3F40;
+  background-color: #39b54a;
   color: #FFFFFF;
 }
 
 .galleryLayoutSwitcher {
-  border-radius: 4px 4px 4px 4px;
   justify-content: center;
   overflow: hidden;
   width: auto !important;
-  align-self: center
+  border-radius: 12px;
+  border: 1px solid rgba(255,255,255,0.7);
 }
 
 .galleryItem--list {
   border-bottom: 1px #E7E9EE solid;
+}
+
+.searchResultContainer {
+  padding-bottom: 32px;
+}
+
+.searchResultContainer,
+:global(.vtex-render__container-id-search-result-layout) {
+  background-color: #0b1a2a;
+}
+
+.galleryTitle--layout{
+  font-family: 'Syne', sans-serif;
+  font-size: 30px;
+  line-height: 38px;
+  color: #fff;
+  font-weight: 900;
+}
+
+.filterContent{
+  display: flex;
+  flex-direction: column;
+  gap:8px;
+}
+
+.filterTitleSpan{
+  font-family: 'Syne', sans-serif;
+  font-size: 12px;
+  line-height: 16px;
+  color: rgba(255, 255, 255, 0.5);
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.filterItem :global(.vtex-checkbox__line-container) {
+  align-items: center;
+  justify-content: center;
+}
+
+.filterItem :global(.vtex-checkbox__box-wrapper) {
+  background-color: #fff;
+}
+
+.filterItem.filterItem--selected :global(.vtex-checkbox__box-wrapper) {
+  background-color: #39b54a;
+}
+
+.filterItem :global(.vtex-checkbox__label) {
+  font-size: 14px;
+  line-height: 28px;
+  color: #fff;
+  font-weight: 400;
+}
+
+.filter__container{
+  border: none;
+}
+
+.filterMessage {
+  color: #fff;
+  font-family: 'Syne', sans-serif;
+}
+
+.totalProducts {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  text-transform:  lowercase;
+  padding: 15px;
 }
