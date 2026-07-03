@@ -9,3 +9,9 @@
 .row--payment-methods {
   padding-top: 16px;
 }
+
+.footerLayout {
+  background-color: #0b1a2a; 
+  color: #bdbdbd; 
+  padding-bottom: 2rem;
+}

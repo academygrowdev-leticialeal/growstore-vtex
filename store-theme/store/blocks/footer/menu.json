@@ -1,4 +1,405 @@
 {
+  "vtex.menu@2.x:menu#department":{
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "rich-text#menu-item-department-title",
+      "menu-item#department-camisetas",
+      "menu-item#department-canecas",
+      "menu-item#department-mochilas",
+      "menu-item#department-garrafas",
+      "menu-item#department-mousepads",
+      "menu-item#department-adesivos"
+    ]
+  },
+  "rich-text#menu-item-department-title":{
+    "props": {
+      "text": "LOJA",
+      "blockClass": "footer-menu-item-title"
+    }
+  },
+   "menu-item#department-camisetas": {
+    "props": {
+      "id": "menu-item#department-camisetas",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/camisetas",
+        "noFollow": false,
+        "tagTitle": "Camisetas",
+        "text": "Camisetas"
+      }
+    }
+  },
+    "menu-item#department-canecas": {
+    "props": {
+      "id": "menu-item#department-canecas",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/canecas",
+        "noFollow": false,
+        "tagTitle": "Canecas",
+        "text": "Canecas"
+      }
+    }
+  },
+    "menu-item#department-mochilas": {
+    "props": {
+      "id": "menu-item#department-mochilas",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/mochilas",
+        "noFollow": false,
+        "tagTitle": "Mochilas",
+        "text": "Mochilas"
+      }
+    }
+  },
+    "menu-item#department-garrafas": {
+    "props": {
+      "id": "menu-item#department-garrfas",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/garrafas",
+        "noFollow": false,
+        "tagTitle": "Garrafas Térmicas",
+        "text": "Garrafas Térmicas"
+      }
+    }
+  },
+    "menu-item#department-mousepads": {
+    "props": {
+      "id": "menu-item#department-mousepads",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/mousepads",
+        "noFollow": false,
+        "tagTitle": "Mousepads",
+        "text": "Mousepads"
+      }
+    }
+  },
+    "menu-item#department-adesivos": {
+    "props": {
+      "id": "menu-item#department-adesivos",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/adesivos",
+        "noFollow": false,
+        "tagTitle": "Adesivos",
+        "text": "Adesivos"
+      }
+    }
+  },
+
+  "vtex.menu@2.x:menu#minha-conta":{
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "rich-text#menu-item-minha-conta-title",
+      "menu-item#minha-conta",
+      "menu-item#meus-pedidos",
+      "menu-item#favoritos",
+      "menu-item#rastreamento",
+      "menu-item#enderecos"
+    ]
+  },
+  "rich-text#menu-item-minha-conta-title":{
+    "props": {
+      "text": "Minha Conta",
+      "blockClass": "footer-menu-item-title"
+    }
+  },
+    "menu-item#minha-conta": {
+    "props": {
+      "id": "menu-item#minha-conta",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/my-account",
+        "noFollow": false,
+        "tagTitle": "Minha Conta",
+        "text": "Minha Conta"
+      }
+    }
+  },
+   "menu-item#meus-pedidos": {
+    "props": {
+      "id": "menu-item#meus-pedidos",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/my-account/orders",
+        "noFollow": false,
+        "tagTitle": "Meus Pedidos",
+        "text": "Meus Pedidos"
+      }
+    }
+  },
+  "menu-item#favoritos": {
+    "props": {
+      "id": "menu-item#favoritos",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/my-account/wishlist",
+        "noFollow": false,
+        "tagTitle": "Lista de Desejos",
+        "text": "Lista de Desejos"
+      }
+    }
+  },
+  "menu-item#rastreamento": {
+    "props": {
+      "id": "menu-item#rastreamento",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/my-account/orders",
+        "noFollow": false,
+        "tagTitle": "Rastrear Pedido",
+        "text": "Rastrear Pedido"
+      }
+    }
+  },
+  "menu-item#enderecos": {
+    "props": {
+      "id": "menu-item#enderecos",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/my-account/address",
+        "noFollow": false,
+        "tagTitle": "Endereços",
+        "text": "Endereços"
+      }
+    }
+  },
+
+  "vtex.menu@2.x:menu#footer-institutional":{
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "rich-text#menu-item-institutional",
+      "menu-item#sobre-nos",
+      "menu-item#growdev",
+      "menu-item#growlabs",
+      "menu-item#privacidade",
+      "menu-item#termos",
+      "menu-item#trocas",
+      "menu-item#footer-faq"
+    ]
+  },
+  "rich-text#menu-item-institutional":{
+    "props": {
+      "text": "Institucional",
+      "blockClass": "footer-menu-item-title"
+    }
+  },
+    "menu-item#sobre-nos": {
+    "props": {
+      "id": "menu-item#sobre-nos",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/sobre-nos",
+        "noFollow": false,
+        "tagTitle": "Sobre a Growdev",
+        "text": "Sobre a Growdev"
+      }
+    }
+  },
+  "menu-item#growdev": {
+    "props": {
+      "id": "menu-item#growdev",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/growdev",
+        "noFollow": false,
+        "tagTitle": "Growdev",
+        "text": "Growdev"
+      }
+    }
+  },
+  "menu-item#growlabs": {
+    "props": {
+      "id": "menu-item#growlabs",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/growlabs",
+        "noFollow": false,
+        "tagTitle": "GrowLabs",
+        "text": "Growlabs"
+      }
+    }
+  },
+  "menu-item#privacidade": {
+    "props": {
+      "id": "menu-item#privacidade",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/privacidade",
+        "noFollow": false,
+        "tagTitle": "Política de Privacidade",
+        "text": "Política de Privacidade"
+      }
+    }
+  },
+  "menu-item#termos": {
+    "props": {
+      "id": "menu-item#termos",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/termos-de-uso",
+        "noFollow": false,
+        "tagTitle": "Termos de Uso",
+        "text": "Termos de Uso"
+      }
+    }
+  },
+  "menu-item#trocas": {
+    "props": {
+      "id": "menu-item#trocas",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/politicas-de-troca",
+        "noFollow": false,
+        "tagTitle": "Políticas de Trocas",
+        "text": "Políticas de Trocas"
+      }
+    }
+  },
+   "menu-item#footer-faq": {
+    "props": {
+      "id": "menu-item#footer-faq",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/faq",
+        "noFollow": false,
+        "tagTitle": "FAQ",
+        "text": "FAQ"
+      }
+    }
+  },
+
+  "vtex.menu@2.x:menu#contact":{
+    "props": {
+      "orientation": "vertical",
+      "blockClass": "menu-item-contact"
+    },
+    "children": [
+      "rich-text#menu-item-contact",
+      "menu-item#contact-email",
+      "menu-item#contact-phone",
+      "menu-item#contact-location"
+    ]
+  },
+  "rich-text#menu-item-contact":{
+    "props": {
+      "text": "Contato",
+      "blockClass": "footer-menu-item-title"
+    }
+  },
+    "menu-item#contact-email": {
+    "props": {
+      "id": "menu-item#contact-email",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "blockClass": "item-email",
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "loja@growdev.com.br",
+        "text": "loja@growdev.com.br"
+      }
+    }
+  },
+   "menu-item#contact-phone": {
+    "props": {
+      "id": "menu-item#contact-phone",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "blockClass": "item-phone",
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "(51) 9 9008-0217",
+        "text": "(51) 9 9008-0217"
+      }
+    }
+  },
+   "menu-item#contact-location": {
+    "props": {
+      "id": "menu-item#location",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "blockClass": "item-local",
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Feevale Techpark, Novo Hamburgo - RS",
+        "text": "Feevale Techpark, Novo Hamburgo - RS"
+      }
+    }
+  },
+
+  
   "vtex.menu@2.x:menu#Products": {
     "props": {
       "orientation": "vertical"
@@ -189,205 +590,129 @@
     }
   },
 
-  "vtex.menu@2.x:menu#footer-clothing": {
-    "props": {
-      "orientation": "vertical"
-    },
-    "children": [
-      "menu-item#clothing",
-      "menu-item#shorts",
-      "menu-item#tank-tops",
-      "menu-item#shirts",
-      "menu-item#sweatshirt",
-      "menu-item#cropped"
-    ]
-  },
-
   "vtex.menu@2.x:menu#footer-mobile": {
     "props": {
       "orientation": "vertical"
     },
     "children": [
-      "menu-item#clothing-mobile",
-      "menu-item#decoration-mobile",
-      "menu-item#sale-mobile"
+      "menu-item#loja-mobile",
+      "menu-item#minha-conta-mobile",
+      "menu-item#institucional-mobile",
+      "menu-item#contato-mobile"
     ]
   },
 
-  "menu-item#clothing-mobile": {
+  "menu-item#loja-mobile": {
     "props": {
-      "id": "menu-item-category-clothing",
       "type": "custom",
       "iconId": null,
       "highlight": false,
       "itemProps": {
-        "type": "internal",
-        "href": "/clothing/d",
-        "noFollow": true,
-        "tagTitle": "Clothing",
-        "text": "Clothing"
+        "tagTitle": "LOJA",
+        "text": "LOJA"
       }
     },
-    "blocks": ["vtex.menu@2.x:submenu.accordion#clothing"]
+    "blocks": ["vtex.menu@2.x:submenu.accordion#loja"]
   },
-  "vtex.menu@2.x:submenu.accordion#clothing": {
-    "children": ["vtex.menu@2.x:menu#clothing-accordion"]
+  "vtex.menu@2.x:submenu.accordion#loja": {
+    "children": ["vtex.menu@2.x:menu#loja-accordion"]
   },
-
-  "vtex.menu@2.x:menu#clothing-accordion": {
+  "vtex.menu@2.x:menu#loja-accordion": {
     "props": {
       "orientation": "vertical"
     },
     "children": [
-      "menu-item#shorts",
-      "menu-item#tank-tops",
-      "menu-item#shirts",
-      "menu-item#sweatshirt",
-      "menu-item#cropped"
+      "menu-item#department-camisetas",
+      "menu-item#department-canecas",
+      "menu-item#department-mochilas",
+      "menu-item#department-garrafas",
+      "menu-item#department-mousepads",
+      "menu-item#department-adesivos"
     ]
   },
 
-  "menu-item#decoration-mobile": {
+  "menu-item#minha-conta-mobile": {
     "props": {
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
       "itemProps": {
-        "tagTitle": "Decoration",
-        "text": "Decoration"
+        "tagTitle": "Minha Conta",
+        "text": "Minha Conta"
       }
     },
-    "blocks": ["vtex.menu@2.x:submenu.accordion#decoration"]
+    "blocks": ["vtex.menu@2.x:submenu.accordion#minha-conta"]
   },
-  "vtex.menu@2.x:submenu.accordion#decoration": {
-    "children": ["vtex.menu@2.x:menu#footer-decoration-mobile"]
+  "vtex.menu@2.x:submenu.accordion#minha-conta": {
+    "children": ["vtex.menu@2.x:menu#minha-conta-accordion"]
   },
-
-  "vtex.menu@2.x:menu#footer-decoration-mobile": {
+  "vtex.menu@2.x:menu#minha-conta-accordion": {
     "props": {
       "orientation": "vertical"
     },
     "children": [
-      "menu-item#smartphones",
-      "menu-item#videogames",
-      "menu-item#tvs"
+      "menu-item#minha-conta",
+      "menu-item#meus-pedidos",
+      "menu-item#favoritos",
+      "menu-item#rastreamento",
+      "menu-item#enderecos"
     ]
   },
 
-  "menu-item#sale-mobile": {
+  "menu-item#institucional-mobile": {
     "props": {
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
       "itemProps": {
-        "tagTitle": "Sale",
-        "text": "Sale"
+        "tagTitle": "Institucional",
+        "text": "Institucional"
       }
     },
-    "blocks": ["vtex.menu@2.x:submenu.accordion#sale"]
+    "blocks": ["vtex.menu@2.x:submenu.accordion#institucional"]
   },
-  "vtex.menu@2.x:submenu.accordion#sale": {
-    "children": ["vtex.menu@2.x:menu#footer-sale-mobile"]
+  "vtex.menu@2.x:submenu.accordion#institucional": {
+    "children": ["vtex.menu@2.x:menu#institucional-accordion"]
   },
-
-  "vtex.menu@2.x:menu#footer-sale-mobile": {
+  "vtex.menu@2.x:menu#institucional-accordion": {
     "props": {
       "orientation": "vertical"
     },
     "children": [
-      "menu-item#smartphones",
-      "menu-item#videogames",
-      "menu-item#tvs"
+      "menu-item#sobre-nos",
+      "menu-item#growdev",
+      "menu-item#growlabs",
+      "menu-item#privacidade",
+      "menu-item#termos",
+      "menu-item#trocas",
+      "menu-item#footer-faq"
     ]
   },
 
-  "menu-item#clothing": {
+  "menu-item#contato-mobile": {
     "props": {
-      "id": "menu-item-category-clothing",
       "type": "custom",
       "iconId": null,
       "highlight": false,
       "itemProps": {
-        "type": "internal",
-        "href": "/clothing/d",
-        "noFollow": true,
-        "tagTitle": "Clothing",
-        "text": "Clothing"
+        "tagTitle": "Contato",
+        "text": "Contato"
       }
-    }
+    },
+    "blocks": ["vtex.menu@2.x:submenu.accordion#contato"]
   },
-
-  "menu-item#shorts": {
-    "props": {
-      "id": "menu-item-shorts",
-      "type": "custom",
-      "iconId": null,
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "/clothing/shorts",
-        "noFollow": false,
-        "tagTitle": "Shorts",
-        "text": "Shorts"
-      }
-    }
+  "vtex.menu@2.x:submenu.accordion#contato": {
+    "children": ["vtex.menu@2.x:menu#contato-accordion"]
   },
-
-  "menu-item#tank-tops": {
+  "vtex.menu@2.x:menu#contato-accordion": {
     "props": {
-      "id": "menu-item-tank-tops",
-      "type": "custom",
-      "iconId": null,
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "/clothing/tank-tops",
-        "noFollow": false,
-        "tagTitle": "Tank tops",
-        "text": "Tank tops"
-      }
-    }
-  },
-
-  "menu-item#shirts": {
-    "props": {
-      "id": "menu-item-shirts",
-      "type": "custom",
-      "iconId": null,
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "/clothing/shirts",
-        "noFollow": false,
-        "tagTitle": "Shirts",
-        "text": "Shirts"
-      }
-    }
-  },
-
-  "menu-item#sweatshirt": {
-    "props": {
-      "id": "menu-item-sweat-shirts",
-      "type": "custom",
-      "iconId": null,
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "/clothing/sweatshirt",
-        "noFollow": false,
-        "tagTitle": "Sweatshirt",
-        "text": "Sweatshirt"
-      }
-    }
-  },
-
-  "menu-item#cropped": {
-    "props": {
-      "id": "menu-item-cropped",
-      "type": "custom",
-      "iconId": null,
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "/clothing/cropped",
-        "noFollow": false,
-        "tagTitle": "Cropped",
-        "text": "Cropped"
-      }
-    }
+      "orientation": "vertical",
+      "blockClass": "menu-item-contact"
+    },
+    "children": [
+      "menu-item#contact-email",
+      "menu-item#contact-phone",
+      "menu-item#contact-location"
+    ]
   }
 }

@@ -14,3 +14,30 @@
   display: block;
   margin-bottom: 1rem;
 }
+
+
+/* FOOTER */
+
+.flexRowContent--menu-row {
+  align-items: flex-start;
+}
+
+.flexCol--footer-logo {
+  gap: 1.5rem;
+}
+
+.flexRowContent--credits {
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 2rem;
+  margin-top: 2rem;
+}
+
+@media (max-width: 40em) {
+  .flexRowContent--credits {
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+    justify-content: center;
+  }
+}
