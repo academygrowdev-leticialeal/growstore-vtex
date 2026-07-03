@@ -8,13 +8,23 @@
 }
 
 .flexCol--productSpecificationName {
+  color: #fff;
   padding: 1rem;
 }
 
 .flexCol--productSpecificationValue {
+  color: #fff;
   padding: 1rem 1rem 1rem 0;
 }
 
-.flexRow--productSpecification:nth-child(even) {
-  background-color: #f9f9f9;
+.flexRow--productSpecification:nth-child(odd) {
+  background-color: #162032;
+}
+
+.flexRow--productSpecification {
+  max-width: 550px;
+}
+
+.flexRow--productSpecificationGroupName {
+  display: none;
 }

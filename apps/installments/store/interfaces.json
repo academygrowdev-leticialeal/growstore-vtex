@@ -1,0 +1,11 @@
+{
+  "pdp-installments": {
+    "component": "Installments"
+  },
+  "pdp-product-rating": {
+    "component": "ProductRating"
+  },
+  "pdp-product-share": {
+    "component": "ShareButton"
+  }
+}

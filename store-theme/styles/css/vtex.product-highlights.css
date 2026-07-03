@@ -1,3 +1,21 @@
+.productHighlightText {
+  background-color: #fb2c36;
+  color: #fff;
+  font-size: 10px;
+  font-weight: 700;
+  padding: 5px 10px;
+  border-radius: 16px;
+  text-transform: uppercase;
+}
+  
+  .productHighlightText[data-highLight-id="139"] {
+    background: #f7941d;
+  }
+
+   .productHighlightText[data-highLight-id="138"] {
+    background: #fb2c36;
+  }
+
 .productHighlightWrapper--collection {
   position: absolute;
   top: 10px;
@@ -5,8 +23,3 @@
   width: 200px;
 }
 
-.productHighlightText {
-  background: antiquewhite;
-  border-radius: 20px;
-  padding: 5px 10px;
-}

@@ -5,3 +5,17 @@
 .specificationName {
   font-weight: bold;
 }
+
+.specificationName,
+.specificationValue {
+  color: hsla(0, 0%, 100%, .9);
+  font-size: 14px;
+  line-height: 20px
+}
+
+
+.specificationValue--summarySpecificationText {
+  color: #fff;
+  font-family: 'Inter', sans-serif;
+  font-size: .750rem;
+}

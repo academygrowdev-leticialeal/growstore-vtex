@@ -2,13 +2,14 @@
   "product-summary.shelf": {
     "children": [
       "stack-layout#prodsum",
+      "product-summary-brand",
       "product-summary-name",
-      "flex-layout.col#productRating",
       "product-summary-space",
       "product-list-price#summary",
-      "flex-layout.row#selling-price-savings",
-      "product-installments#summary",
-      "add-to-cart-button"
+      "product-selling-price#summary",
+      //"flex-layout.row#selling-price-savings",
+      "product-installments#summary"
+      //"add-to-cart-button"
     ]
   },
   "flex-layout.col#productRating": {
@@ -22,8 +23,16 @@
     "children": [
       "product-summary-image#shelf",
       "vtex.product-highlights@2.x:product-highlights#collection",
-      "modal-trigger#quickview" // Check quickview.jsonc
+      "modal-trigger#quickview", // Check quickview.jsonc
+      "add-to-cart-button#shelf-summary"
     ]
+  },
+
+  "add-to-cart-button#shelf-summary":{
+    "props": {
+      "blockClass":"shelfSummary",
+      "text": "Adicionar ao Carrinho"
+    }
   },
 
   "product-summary-image#shelf": {
@@ -56,18 +65,6 @@
     "props": {
       "blockClass": "summary"
     }
-  },
-  "flex-layout.row#selling-price-savings": {
-    "props": {
-      "colGap": 2,
-      "preserveLayoutOnMobile": true,
-      "preventHorizontalStretch": true,
-      "marginBottom": 4
-    },
-    "children": [
-      "product-selling-price#summary",
-      "product-price-savings#summary"
-    ]
   },
   "product-installments#summary": {
     "props": {

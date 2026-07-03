@@ -16,13 +16,23 @@
     },
     "children": [
       "rich-text#summarySpecificationBullet",
-      "product-specification-values"
+      "product-specification-values#summaryText"
     ]
+  },
+  "product-specification-values#summaryText": {
+    "children": [
+      "product-specification-text#summaryTextValue"
+    ]
+  },
+  "product-specification-text#summaryTextValue": {
+    "props": {
+      "message": "{specificationValue}",
+      "blockClass": "summarySpecificationText"
+    }
   },
   "rich-text#summarySpecificationBullet": {
     "props": {
       "text": "•",
-      "textColor": "c-action-primary",
       "blockClass": "summarySpecificationBullet"
     }
   }
