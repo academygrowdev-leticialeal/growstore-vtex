@@ -8,7 +8,8 @@
       "flex-layout.row#growstore-categories",
       "flex-layout.row#shelf",
       "flex-layout.row#banner-highlight",
-      "flex-layout.row#brands-highlight"
+      "flex-layout.row#brands-highlight",
+      "benefits-bar"
     ]
   },
 
@@ -157,6 +158,14 @@
     }
   },
   /* Fim - Brands Highlight */
+
+  /* Início Benefits Bar */
+  "benefits-bar": {
+    "props": {
+      "name": "Growstore"
+    }
+  },
+  /* Fim Benefits Bar */
   "flex-layout.row#shelf": {
     "children": ["flex-layout.col#shelf-container"],
     "props": {
@@ -174,13 +183,13 @@
     }
   },
 
-    "list-context.product-list#demo1":{
-      "blocks": ["product-summary.shelf"],
-      "children": ["slider-layout#demo-products"],
-      "props": {
-        "orderBy": "OrderByTopSaleDESC"
-      }
-    },
+  "list-context.product-list#demo1": {
+    "blocks": ["product-summary.shelf"],
+    "children": ["slider-layout#demo-products"],
+    "props": {
+      "orderBy": "OrderByTopSaleDESC"
+    }
+  },
 
   "slider-layout#demo-products": {
     "props": {
