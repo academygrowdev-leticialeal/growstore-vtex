@@ -162,7 +162,28 @@
   /* Início Benefits Bar */
   "benefits-bar": {
     "props": {
-      "name": "Growstore"
+      "benefits": [
+        {
+          "iconUrl": "",
+          "title": "Frete Grátis",
+          "subtitle": "Acima de R$ 199"
+        },
+        {
+          "iconUrl": "",
+          "title": "Compra Segura",
+          "subtitle": "Pagamento protegido"
+        },
+        {
+          "iconUrl": "",
+          "title": "Troca Fácil",
+          "subtitle": "Até 30 dias"
+        },
+        {
+          "iconUrl": "",
+          "title": "Suporte",
+          "subtitle": "Segund à Sexta"
+        }
+      ]
     }
   },
   /* Fim Benefits Bar */
