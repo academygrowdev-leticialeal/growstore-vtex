@@ -9,7 +9,7 @@
       "flex-layout.row#shelf",
       "flex-layout.row#banner-highlight",
       "flex-layout.row#brands-highlight",
-      "benefits-bar"
+      "flex-layout.row#benefits-bar"
     ]
   },
 
@@ -160,6 +160,13 @@
   /* Fim - Brands Highlight */
 
   /* Início Benefits Bar */
+  "flex-layout.row#benefits-bar": {
+    "children": ["benefits-bar"],
+    "props": {
+      "fullWidth": true,
+      "blockClass": "background-benefits"
+    }
+  },
   "benefits-bar": {
     "props": {
       "benefits": [
