@@ -1,5 +1,6 @@
 import React from "react";
 import { useCssHandles } from "vtex.css-handles";
+import { schema } from "./schemas/schema";
 
 const CSS_HANDLES = [
   "container",
@@ -40,5 +41,7 @@ function BenefitsBar({ benefits=[] }: BenefitsBarProps) {
     </section>
   );
 }
+
+BenefitsBar.schema = schema;
 
 export default BenefitsBar;
