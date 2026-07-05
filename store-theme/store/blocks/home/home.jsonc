@@ -8,7 +8,8 @@
       "flex-layout.row#growstore-categories",
       "flex-layout.row#shelf",
       "flex-layout.row#banner-highlight",
-      "flex-layout.row#brands-highlight"
+      "flex-layout.row#brands-highlight",
+      "flex-layout.row#benefits-bar"
     ]
   },
 
@@ -157,6 +158,42 @@
     }
   },
   /* Fim - Brands Highlight */
+
+  /* Início Benefits Bar */
+  "flex-layout.row#benefits-bar": {
+    "children": ["benefits-bar"],
+    "props": {
+      "fullWidth": true,
+      "blockClass": "background-benefits"
+    }
+  },
+  "benefits-bar": {
+    "props": {
+      "benefits": [
+        {
+          "iconUrl": "https://partnersigrowdev.vtexassets.com/assets/vtex.file-manager-graphql/images/dcafd06d-95a9-401c-83e9-efc01d32535c___4f427a592270ddf8297dc2c5ed6fec15.svg",
+          "title": "Frete Grátis",
+          "subtitle": "Acima de R$ 199"
+        },
+        {
+          "iconUrl": "https://partnersigrowdev.vtexassets.com/assets/vtex.file-manager-graphql/images/658c17dd-2b1e-4501-9459-0560cdd5f8f5___98a60d39f338bb82abebf8cbe2b034ae.svg",
+          "title": "Compra Segura",
+          "subtitle": "Pagamento protegido"
+        },
+        {
+          "iconUrl": "https://partnersigrowdev.vtexassets.com/assets/vtex.file-manager-graphql/images/b5c4d64a-4ad0-42b0-a16c-837c49009b71___17afa4789d96c1c05258391c11cff190.svg",
+          "title": "Troca Fácil",
+          "subtitle": "Até 30 dias"
+        },
+        {
+          "iconUrl": "https://partnersigrowdev.vtexassets.com/assets/vtex.file-manager-graphql/images/f91a69a9-fb29-4db8-81cf-36398b324759___03f4824c3241c726dbd87770a19f66e7.svg",
+          "title": "Suporte",
+          "subtitle": "Segunda à Sexta"
+        }
+      ]
+    }
+  },
+  /* Fim Benefits Bar */
   "flex-layout.row#shelf": {
     "children": ["flex-layout.col#shelf-container"],
     "props": {
@@ -174,13 +211,13 @@
     }
   },
 
-    "list-context.product-list#demo1":{
-      "blocks": ["product-summary.shelf"],
-      "children": ["slider-layout#demo-products"],
-      "props": {
-        "orderBy": "OrderByTopSaleDESC"
-      }
-    },
+  "list-context.product-list#demo1": {
+    "blocks": ["product-summary.shelf"],
+    "children": ["slider-layout#demo-products"],
+    "props": {
+      "orderBy": "OrderByTopSaleDESC"
+    }
+  },
 
   "slider-layout#demo-products": {
     "props": {

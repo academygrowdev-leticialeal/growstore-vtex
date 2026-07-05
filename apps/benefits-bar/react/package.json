@@ -24,6 +24,7 @@
     "vtex.render-runtime": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.render-runtime@8.136.2/public/@types/vtex.render-runtime"
   },
   "resolutions": {
-    "@types/jest": "26.0.15"
+    "@types/jest": "26.0.15",
+    "**/node-releases": "2.0.14"
   }
 }

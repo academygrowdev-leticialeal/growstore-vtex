@@ -23,7 +23,7 @@
 }
 
 .flexRowContent--main-header {
-  background-color: #0A1520 !important;
+  background-color: #0a1520 !important;
   display: flex;
   justify-items: center;
   align-items: center;
@@ -107,14 +107,27 @@
   background: #0d1b2a;
   padding: 16px;
 }
-@media (max-width: 768px) {
-  .flexRow--background-default,
-  .flexRow--background-brands {
-    padding: 20px;
-  }
-}
 
 /* CUSTOM BRANDS HIGHLIGHT */
 .flexRow--background-brands {
   background: #0d1b2a;
+}
+
+/* CUSTOM BENEFITS BAR */
+.flexRow--background-benefits {
+  background: #0d1b2a;
+}
+
+@media (max-width: 768px) {
+  .flexRow--background-default,
+  .flexRow--background-brands,
+  .flexRow--background-benefits {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .flexRow--background-benefits {
+    padding: 0 8px;
+  }
 }
