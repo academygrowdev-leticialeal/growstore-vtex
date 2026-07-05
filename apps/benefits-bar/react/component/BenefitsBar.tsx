@@ -7,6 +7,7 @@ const CSS_HANDLES = [
   "iconWrapper",
   "icon",
   "content",
+  "title",
   "subtitle"
 ] as const;
 
@@ -31,8 +32,8 @@ function BenefitsBar({ benefits=[] }: BenefitsBarProps) {
             <img src={iconUrl} alt={title} className={handles.icon} />
           </div>
           <div className={handles.content}>
-            <h3>{title}</h3>
-            <p className={handles.subtitle}>{subtitle}</p>
+            <span className={handles.title}>{title}</span>
+            <span className={handles.subtitle}>{subtitle}</span>
           </div>
         </div>
       ))}
