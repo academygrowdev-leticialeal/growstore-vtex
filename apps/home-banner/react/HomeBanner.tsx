@@ -25,22 +25,22 @@ interface HomeBannerComponent extends React.FC<Props> {
 }
 
 const HomeBanner: HomeBannerComponent = ({
-  tag = '— LOJA OFICIAL',
-  title = 'Gear para',
-  highlightedWord = 'Growdevers',
-  subtitle = 'Produtos exclusivos e customizados das marcas Growdev e Growlabs. Para quem vive e respira tecnologia.',
-  btnPrimaryLabel = 'Ver Todos os Produtos →',
-  btnPrimaryHref = '/growlabs',
-  btnSecondaryLabel = 'Growdev',
-  btnSecondaryHref = '/growdev',
-  stat1Number = '9+',
-  stat1Label = 'Categorias',
-  stat2Number = '50+',
-  stat2Label = 'Produtos',
-  stat3Number = '1.5k+',
-  stat3Label = 'Growdevers',
-  imageUrl = 'https://partnersigrowdev.vtexassets.com/assets/vtex.file-manager-graphql/images/f784535a-9fb8-4771-9ffe-2599e387e316___f5b739dd734a4deed7a06909d096324f.jpeg',
-  imageAlt = 'Produtos Grow',
+  tag,
+  title = '',
+  highlightedWord = '',
+  subtitle,
+  btnPrimaryLabel,
+  btnPrimaryHref,
+  btnSecondaryLabel,
+  btnSecondaryHref,
+  stat1Number,
+  stat1Label,
+  stat2Number,
+  stat2Label,
+  stat3Number,
+  stat3Label,
+  imageUrl,
+  imageAlt,
 }) => {
   return (
     <div className={styles.homeBanner}>
@@ -89,8 +89,8 @@ HomeBanner.schema = {
   description: 'Banner principal da home',
   type: 'object',
   properties: {
-    tag: { title: 'Tag superior', type: 'string', default: '— LOJA OFICIAL' },
-    title: { title: 'Título', type: 'string', default: 'Gear para' },
+    tag: { title: 'Tag superior', type: 'string' },
+    title: { title: 'Título', type: 'string' },
     highlightedWord: { title: 'Palavra destacada', type: 'string' },
     subtitle: {
       title: 'Subtítulo',

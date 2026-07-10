@@ -1,7 +1,7 @@
 {
   "store.home": {
     "blocks": [
-      "home-banner",
+      "slider-layout#home-banner",
       /* You can make references to blocks defined in other files.
        * For example, `flex-layout.row#deals` is defined in the `deals.json` file. */
       "__fold__",
@@ -10,6 +10,64 @@
       "flex-layout.row#banner-highlight",
       "flex-layout.row#brands-highlight"
     ]
+  },
+  "slider-layout#home-banner": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "infinite": true,
+      "showNavigationArrows": "always",
+      "showPaginationDots": "always",
+      "autoplay": {
+        "timeout": 5000,
+        "stopOnHover": true
+      },
+      "blockClass": "homeBannerSlider"
+    },
+    "children": ["home-banner#slider1", "home-banner#slider2"]
+  },
+  "home-banner#slider1": {
+    "props": {
+      "tag": "— LOJA OFICIAL",
+      "title": "Gear para",
+      "highlightedWord": "Growdevers",
+      "subtitle": "Produtos exclusivos e customizados das marcas Growdev e Growlabs. Para quem vive e respira tecnologia.",
+      "btnPrimaryLabel": "Ver Todos os Produtos →",
+      "btnPrimaryHref": "/growlabs",
+      "btnSecondaryLabel": "Camisetas",
+      "btnSecondaryHref": "/camisetas",
+      "stat1Number": "9+",
+      "stat1Label": "Categorias",
+      "stat2Number": "50+",
+      "stat2Label": "Produtos",
+      "stat3Number": "1.5k+",
+      "stat3Label": "Growdevers",
+      "imageUrl": "https://partnersigrowdev.vtexassets.com/assets/vtex.file-manager-graphql/images/f784535a-9fb8-4771-9ffe-2599e387e316___f5b739dd734a4deed7a06909d096324f.jpeg",
+      "imageAlt": "Produtos Grow"
+    }
+  },
+  "home-banner#slider2": {
+    "props": {
+      "tag": "— NOVIDADES",
+      "title": "Style para",
+      "highlightedWord": "Growdevers",
+      "subtitle": "Confira a nova coleção de mochilas e acessórios exclusivos para o seu setup.",
+      "btnPrimaryLabel": "Ver Novidades →",
+      "btnPrimaryHref": "/novidades",
+      "btnSecondaryLabel": "Acessórios",
+      "btnSecondaryHref": "/acessorios",
+      "stat1Number": "9+",
+      "stat1Label": "Categorias",
+      "stat2Number": "50+",
+      "stat2Label": "Mochilas",
+      "stat3Number": "1.5k+",
+      "stat3Label": "Growdevers",
+      "imageUrl": "https://partnersigrowdev.vtexassets.com/assets/vtex.file-manager-graphql/images/d1b3d576-cd8a-4e7c-9af0-47648523cdcc___0c845cbe192accb266e3e56a91778f0e.jpg",
+      "imageAlt": "Moletons Grow"
+    }
   },
 
   /* Início - Shelf Item */
@@ -174,13 +232,13 @@
     }
   },
 
-    "list-context.product-list#demo1":{
-      "blocks": ["product-summary.shelf"],
-      "children": ["slider-layout#demo-products"],
-      "props": {
-        "orderBy": "OrderByTopSaleDESC"
-      }
-    },
+  "list-context.product-list#demo1": {
+    "blocks": ["product-summary.shelf"],
+    "children": ["slider-layout#demo-products"],
+    "props": {
+      "orderBy": "OrderByTopSaleDESC"
+    }
+  },
 
   "slider-layout#demo-products": {
     "props": {

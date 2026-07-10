@@ -1,6 +1,9 @@
 .homeBanner {
   position: relative;
   min-height: 80vh;
+  width: 100vw;
+  height: 100%;
+  padding:0;
   overflow: hidden;
   display: flex;
   align-items: center;
@@ -10,9 +13,11 @@
 .homeBanner::before {
   content: '';
   position: absolute;
-  inset: 0;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
+  object-fit: cover;
   background: linear-gradient(
     to right,
     rgba(5, 10, 20, 0.95) 0%,
