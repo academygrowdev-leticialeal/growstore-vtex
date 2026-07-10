@@ -50,15 +50,20 @@ const HomeBanner: HomeBannerComponent = ({
         <h1 className={styles.bannerTitle}>
           {title.split(' ').map((word, index) => (
             <span key={index}>
-              {word}<br />
+              {word}
+              <br />
             </span>
           ))}
           <span className={styles.bannerHighlight}>{highlightedWord}</span>
         </h1>
         <p className={styles.bannerSubtitle}>{subtitle}</p>
         <div className={styles.bannerButtons}>
-          <a href={btnPrimaryHref} className={styles.btnPrimary}>{btnPrimaryLabel}</a>
-          <a href={btnSecondaryHref} className={styles.btnSecondary}>{btnSecondaryLabel}</a>
+          <a href={btnPrimaryHref} className={styles.btnPrimary}>
+            {btnPrimaryLabel}
+          </a>
+          <a href={btnSecondaryHref} className={styles.btnSecondary}>
+            {btnSecondaryLabel}
+          </a>
         </div>
         <div className={styles.bannerStats}>
           <div className={styles.statItem}>
@@ -86,20 +91,32 @@ HomeBanner.schema = {
   properties: {
     tag: { title: 'Tag superior', type: 'string', default: '— LOJA OFICIAL' },
     title: { title: 'Título', type: 'string', default: 'Gear para' },
-    highlightedWord: { title: 'Palavra destacada', type: 'string', default: 'Growdevers' },
-    subtitle: { title: 'Subtítulo', type: 'string', default: 'Produtos exclusivos...' },
-    btnPrimaryLabel: { title: 'Botão primário - texto', type: 'string', default: 'Ver Todos os Produtos →' },
-    btnPrimaryHref: { title: 'Botão primário - link', type: 'string', default: '/growlabs' },
-    btnSecondaryLabel: { title: 'Botão secundário - texto', type: 'string', default: 'Growdev' },
-    btnSecondaryHref: { title: 'Botão secundário - link', type: 'string', default: '/growdev' },
-    stat1Number: { title: 'Stat 1 - número', type: 'string', default: '9+' },
-    stat1Label: { title: 'Stat 1 - label', type: 'string', default: 'Categorias' },
-    stat2Number: { title: 'Stat 2 - número', type: 'string', default: '50+' },
-    stat2Label: { title: 'Stat 2 - label', type: 'string', default: 'Produtos' },
-    stat3Number: { title: 'Stat 3 - número', type: 'string', default: '1.5k+' },
-    stat3Label: { title: 'Stat 3 - label', type: 'string', default: 'Growdevers' },
-    imageUrl: { title: 'URL da imagem', type: 'string', widget: { 'ui:widget': 'image-uploader' } },
-    imageAlt: { title: 'Alt da imagem', type: 'string', default: 'Produtos Grow' },
+    highlightedWord: { title: 'Palavra destacada', type: 'string' },
+    subtitle: {
+      title: 'Subtítulo',
+      type: 'string',
+      default: 'Produtos exclusivos...',
+    },
+    btnPrimaryLabel: { title: 'Botão primário - texto', type: 'string' },
+    btnPrimaryHref: { title: 'Botão primário - link', type: 'string' },
+    btnSecondaryLabel: {
+      title: 'Botão secundário - texto',
+      type: 'string',
+      default: 'Growdev',
+    },
+    btnSecondaryHref: { title: 'Botão secundário - link', type: 'string' },
+    stat1Number: { title: 'Stat 1 - número', type: 'string' },
+    stat1Label: { title: 'Stat 1 - label', type: 'string' },
+    stat2Number: { title: 'Stat 2 - número', type: 'string' },
+    stat2Label: { title: 'Stat 2 - label', type: 'string' },
+    stat3Number: { title: 'Stat 3 - número', type: 'string' },
+    stat3Label: { title: 'Stat 3 - label', type: 'string' },
+    imageUrl: {
+      title: 'URL da imagem',
+      type: 'string',
+      widget: { 'ui:widget': 'image-uploader' },
+    },
+    imageAlt: { title: 'Alt da imagem', type: 'string' },
   },
 }
 
